@@ -1,0 +1,44 @@
+/* @use "utils" as *;
+@use "layouts" as *; */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: clip;
+}
+
+.content {
+  grid-area: main-content;
+
+  &__container {
+    display: grid;
+    grid-template-areas: "aside main main main";
+    grid-template-columns: auto 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: 780px) {
+      grid-template-areas: "main";
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Segoe UI", sans-serif;
+}
+
+[class*="__container"] {
+  max-inline-size: 1310px; 
+  width: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
