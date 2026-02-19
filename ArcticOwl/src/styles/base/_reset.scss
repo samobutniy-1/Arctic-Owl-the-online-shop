@@ -1,44 +1,82 @@
-/* @use "utils" as *;
-@use "layouts" as *; */
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow: clip;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-.content {
-  grid-area: main-content;
-
-  &__container {
-    display: grid;
-    grid-template-areas: "aside main main main";
-    grid-template-columns: auto 1fr 1fr 1fr;
-    justify-content: space-between;
-    gap: 40px;
-
-    @media (max-width: 780px) {
-      grid-template-areas: "main";
-      grid-template-columns: 1fr;
-    }
-  }
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
 aside {
-  grid-area: aside;
-}
-main {
-  grid-area: main;
+  display: block;
 }
 
+html,
 body {
-  font-family: "Roboto", "Helvetica", "Segoe UI", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-[class*="__container"] {
-  max-inline-size: 1310px; 
-  width: 100%;
-  padding-inline: 15px;
-  margin-inline: auto;
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
 }

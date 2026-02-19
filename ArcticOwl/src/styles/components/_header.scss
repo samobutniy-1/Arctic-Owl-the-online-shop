@@ -1,0 +1,88 @@
+@use "../variables" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 116px;
+  &__container {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    gap: 82px;
+
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      height: 100%;
+      flex-grow: 1;
+    }
+  }
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: $logo-color;
+    padding: 10px 12px;
+  }
+  &__logo {
+    fill: $primary-color-light;
+    max-width: 80px;
+  }
+  &__input-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+  }
+  &__input {
+    flex-grow: 1;
+    height: 100%;
+    padding: 20px 28px;
+    padding-right: 0;
+  }
+  &__search-btn {
+    height: 100%;
+    padding: 14px;
+    background-color: $primary-color-light;
+    > svg {
+      fill: $text-color;
+      max-width: 48px;
+      height: 100%;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 44px;
+  &__action-btn {
+    height: 100%;
+    padding: 14px 24px;
+    background-color: $primary-color-light;
+  }
+  &__cart-icon {
+    fill: $text-color;
+    height: 100%;
+    max-width: 48px;
+  }
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    background-color: $primary-color-light;
+    height: 100%;
+    padding: 14px 24px;
+
+    > span {
+      width: 36px;
+      height: 4px;
+      background-color: $text-color;
+    }
+  }
+}
