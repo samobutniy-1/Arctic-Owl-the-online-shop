@@ -1,6 +1,7 @@
 @use "components" as *;
 @use "base/reset" as *;
 @use "variables" as *;
+@use "utils" as *;
 
 .wrapper {
   display: flex;

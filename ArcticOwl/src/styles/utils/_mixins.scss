@@ -1,0 +1,25 @@
+@use "sass:math";
+// This line imports the math module, which allows performing
+// mathematical operations in SCSS, including math.div() (number division).
+
+@mixin fluid-text($max: 48, $min: 16) {
+  // Maximum and minimum font sizes based on the design
+  $maxViewportWidth: 1240;
+  $minViewportWidth: 320;
+
+  // Convert all values to rem
+  $maxSize: math.div($max, 16);
+  $minSize: math.div($min, 16);
+  $maxWidth: math.div($maxViewportWidth, 16);
+  $minWidth: math.div($minViewportWidth, 16);
+
+  // Calculate fluid scaling depending on viewport width
+  $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+  $yAxisIntersection: -$minWidth * $slope + $minSize;
+
+  font-size: clamp(
+    #{$minSize * 1rem},
+    #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
+    #{$maxSize * 1rem}
+  );
+}
