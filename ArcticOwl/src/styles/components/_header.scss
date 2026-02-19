@@ -1,22 +1,23 @@
 @use "../variables" as *;
 @use "../utils" as *;
+@use "./buttons" as *;
 
 .header {
   font-size: rem(24);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 116px;
+  height: em(116);
   &__container {
-    height: 76px;
+    height: em(76);
     display: flex;
     align-items: center;
-    gap: 82px;
+    gap: em(82);
 
     > div:first-child {
       display: flex;
       align-items: center;
-      gap: 18px;
+      gap: em(18);
       height: 100%;
       flex-grow: 1;
     }
@@ -27,11 +28,11 @@
     justify-content: center;
     height: 100%;
     background-color: $logo-color;
-    padding: 10px 12px;
+    padding: em(10) em(12);
   }
   &__logo {
     fill: $primary-color-light;
-    max-width: 80px;
+    max-width: em(80);
   }
   &__input-container {
     display: flex;
@@ -42,16 +43,16 @@
   &__input {
     flex-grow: 1;
     height: 100%;
-    padding: 20px 28px;
+    padding: em(20) em(28);
     padding-right: 0;
   }
   &__search-btn {
     height: 100%;
-    padding: 14px;
+    padding: em(14);
     background-color: $primary-color-light;
     > svg {
       fill: $text-color;
-      max-width: 48px;
+      max-width: em(48);
       height: 100%;
     }
   }
@@ -61,29 +62,25 @@
   display: flex;
   align-items: center;
   height: 100%;
-  gap: 44px;
+  gap: em(44);
   &__action-btn {
-    height: 100%;
-    padding: 14px 24px;
-    background-color: $primary-color-light;
+    @include button();
   }
   &__cart-icon {
     fill: $text-color;
     height: 100%;
-    max-width: 48px;
+    max-width: em(48);
   }
   &__burger {
+    @include button();
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6px;
-    background-color: $primary-color-light;
-    height: 100%;
-    padding: 14px 24px;
+    gap: em(6);
 
     > span {
-      width: 36px;
-      height: 4px;
+      width: em(36);
+      height: em(4);
       background-color: $text-color;
     }
   }

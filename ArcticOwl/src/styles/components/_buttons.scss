@@ -1,0 +1,8 @@
+@use "../variables" as *;
+@use "../utils" as *;
+
+@mixin button() {
+  height: 100%;
+  padding: em(14) em(24);
+  background-color: $primary-color-light;
+}
