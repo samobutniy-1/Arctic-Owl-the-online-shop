@@ -1,0 +1,60 @@
+@use "../base/typography";
+@use "../variables/colors" as *;
+@use "../utils/functions" as *;
+
+.hero-section {
+  &__container {
+    padding: 0;
+  }
+  &__info {
+    display: flex;
+    background-color: $primary-color-light;
+    justify-content: space-between;
+    align-items: center;
+    padding: em(46) em(32) em(46) em(72);
+    box-shadow: $shadow;
+  }
+  &__text {
+    line-height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 32px;
+    max-inline-size: 540px;
+    min-inline-size: 240px;
+    line-height: 1.6;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 24px;
+    border-top: 3px solid $text-color;
+    border-bottom: 3px solid $text-color;
+    padding: 24px 0;
+    line-height: 1.1;
+  }
+
+  &__subtitle {
+  }
+  &__img {
+    width: 40%;
+    height: auto;
+  }
+  &__nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-align: center;
+      background-color: $primary-color-light;
+      border-radius: 0 0 22px 22px;
+      padding: 14px 42px 14px;
+      box-shadow: 10px 16px 4px rgba(0, 0, 0, 0.35);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

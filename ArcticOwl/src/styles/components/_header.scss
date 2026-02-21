@@ -3,7 +3,11 @@
 @use "./buttons" as *;
 
 .header {
-  font-size: rem(24);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
