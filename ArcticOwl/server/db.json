@@ -1,0 +1,738 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Alpine Pro Shell Jacket",
+      "category": "jackets",
+      "price": 349,
+      "stock": 12,
+      "image": "",
+      "shortDescription": "Waterproof hardshell jacket for alpine climbing and ski touring.",
+      "details": {
+        "material": "3-layer GORE-TEX Pro",
+        "waterproofing": "20,000mm",
+        "breathability": "20,000g/m²/24h",
+        "weight": "520g",
+        "features": [
+          "Helmet-compatible hood",
+          "Pit zips",
+          "4 pockets",
+          "Recco reflector"
+        ],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Glacier Insulated Jacket",
+      "category": "jackets",
+      "price": 289,
+      "stock": 8,
+      "image": "",
+      "shortDescription": "Down-filled insulated jacket for cold mountain environments.",
+      "details": {
+        "material": "700-fill power duck down",
+        "waterproofing": "DWR treated",
+        "breathability": "8,000g/m²/24h",
+        "weight": "480g",
+        "features": [
+          "Packable design",
+          "Adjustable hood",
+          "Inner chest pocket"
+        ],
+        "gender": "male",
+        "sizes": ["S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Freeride Ski Jacket",
+      "category": "jackets",
+      "price": 419,
+      "stock": 5,
+      "image": "",
+      "shortDescription": "High-performance jacket built for off-piste skiing and powder days.",
+      "details": {
+        "material": "2.5-layer nylon ripstop",
+        "waterproofing": "15,000mm",
+        "breathability": "15,000g/m²/24h",
+        "weight": "610g",
+        "features": [
+          "Snow skirt",
+          "Goggle pocket",
+          "Ski pass pocket",
+          "Powder cuffs"
+        ],
+        "gender": "male",
+        "sizes": ["S", "M", "L", "XL"]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Summit Softshell Jacket",
+      "category": "jackets",
+      "price": 199,
+      "stock": 20,
+      "image": "",
+      "shortDescription": "Stretchy softshell for active mountain use in variable conditions.",
+      "details": {
+        "material": "Polartec Windbloc softshell",
+        "waterproofing": "5,000mm",
+        "breathability": "10,000g/m²/24h",
+        "weight": "390g",
+        "features": ["4-way stretch", "Fleece lining", "Zippered pockets"],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL"]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Nordic Trail Jacket",
+      "category": "jackets",
+      "price": 259,
+      "stock": 14,
+      "image": "",
+      "shortDescription": "Lightweight and packable jacket for cross-country skiing and hiking.",
+      "details": {
+        "material": "Pertex Quantum ripstop nylon",
+        "waterproofing": "10,000mm",
+        "breathability": "12,000g/m²/24h",
+        "weight": "310g",
+        "features": [
+          "Stuffs into chest pocket",
+          "Adjustable hem",
+          "Reflective details"
+        ],
+        "gender": "female",
+        "sizes": ["XS", "S", "M", "L", "XL"]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Women's Alpine Hardshell",
+      "category": "jackets",
+      "price": 379,
+      "stock": 9,
+      "image": "",
+      "shortDescription": "Technical hardshell designed specifically for women's mountaineering.",
+      "details": {
+        "material": "3-layer GORE-TEX",
+        "waterproofing": "20,000mm",
+        "breathability": "18,000g/m²/24h",
+        "weight": "490g",
+        "features": [
+          "Women's-specific fit",
+          "Helmet-compatible hood",
+          "Underarm vents"
+        ],
+        "gender": "female",
+        "sizes": ["XS", "S", "M", "L"]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Polar Explorer Parka",
+      "category": "jackets",
+      "price": 499,
+      "stock": 4,
+      "image": "",
+      "shortDescription": "Expedition-grade parka for extreme cold and harsh winter conditions.",
+      "details": {
+        "material": "800-fill power goose down",
+        "waterproofing": "DWR treated outer shell",
+        "breathability": "6,000g/m²/24h",
+        "weight": "980g",
+        "features": [
+          "Fur-trimmed hood",
+          "Knee length",
+          "Internal storm flap",
+          "6 pockets"
+        ],
+        "gender": "unisex",
+        "sizes": ["S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 8,
+      "name": "ArcticOwl Signature Jacket",
+      "category": "jackets",
+      "price": 549,
+      "stock": 3,
+      "image": "",
+      "shortDescription": "Our flagship jacket — the ultimate blend of warmth, protection, and style.",
+      "details": {
+        "material": "GORE-TEX Pro 3L with PrimaLoft Gold insulation",
+        "waterproofing": "28,000mm",
+        "breathability": "25,000g/m²/24h",
+        "weight": "720g",
+        "features": [
+          "Recco avalanche reflector",
+          "RFID pocket",
+          "Helmet-compatible hood",
+          "Lifetime warranty"
+        ],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Arctic Mummy Sleeping Bag -20°C",
+      "category": "sleeping-bags",
+      "price": 279,
+      "stock": 7,
+      "image": "",
+      "shortDescription": "Mummy-style sleeping bag rated to -20°C for winter camping and expeditions.",
+      "details": {
+        "fill": "800-fill goose down",
+        "temperatureRating": "-20°C comfort / -30°C limit",
+        "weight": "1.4kg",
+        "packSize": "25x40cm",
+        "features": [
+          "Draft collar",
+          "Hood cinch",
+          "Anti-snag zipper",
+          "Footbox vent"
+        ],
+        "gender": "unisex",
+        "sizes": ["Regular", "Long"]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Summit Pro Sleeping Bag -10°C",
+      "category": "sleeping-bags",
+      "price": 199,
+      "stock": 11,
+      "image": "",
+      "shortDescription": "Versatile sleeping bag suitable for mountain huts and winter camping.",
+      "details": {
+        "fill": "700-fill duck down",
+        "temperatureRating": "-10°C comfort / -20°C limit",
+        "weight": "1.1kg",
+        "packSize": "20x35cm",
+        "features": [
+          "Zipper can link with another bag",
+          "Internal pocket",
+          "Compression sack included"
+        ],
+        "gender": "unisex",
+        "sizes": ["Regular", "Long"]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Ultralight Down Bag -5°C",
+      "category": "sleeping-bags",
+      "price": 159,
+      "stock": 15,
+      "image": "",
+      "shortDescription": "Ultralight sleeping bag for fast-and-light alpinism and ski touring bivouacs.",
+      "details": {
+        "fill": "850-fill goose down",
+        "temperatureRating": "-5°C comfort / -15°C limit",
+        "weight": "680g",
+        "packSize": "15x28cm",
+        "features": [
+          "Water-resistant down",
+          "Minimal baffles",
+          "Ultralight shell fabric"
+        ],
+        "gender": "unisex",
+        "sizes": ["Regular"]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Women's Contour Sleeping Bag -15°C",
+      "category": "sleeping-bags",
+      "price": 229,
+      "stock": 6,
+      "image": "",
+      "shortDescription": "Women's-specific cut with extra insulation at core and feet.",
+      "details": {
+        "fill": "750-fill goose down",
+        "temperatureRating": "-15°C comfort / -25°C limit",
+        "weight": "1.2kg",
+        "packSize": "22x38cm",
+        "features": [
+          "Women's-specific shape",
+          "Footbox heater pad",
+          "Neck baffle"
+        ],
+        "gender": "female",
+        "sizes": ["Regular", "Short"]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Base Camp Synthetic Bag -10°C",
+      "category": "sleeping-bags",
+      "price": 129,
+      "stock": 18,
+      "image": "",
+      "shortDescription": "Synthetic-fill sleeping bag that performs even when wet.",
+      "details": {
+        "fill": "PrimaLoft Silver synthetic",
+        "temperatureRating": "-10°C comfort / -20°C limit",
+        "weight": "1.6kg",
+        "packSize": "28x45cm",
+        "features": ["Performs when wet", "Easy care", "Budget-friendly"],
+        "gender": "unisex",
+        "sizes": ["Regular", "Long"]
+      }
+    },
+    {
+      "id": 14,
+      "name": "Merino Wool Base Layer Top",
+      "category": "base-layers",
+      "price": 89,
+      "stock": 25,
+      "image": "",
+      "shortDescription": "250gsm merino wool long-sleeve top for warmth and odour resistance.",
+      "details": {
+        "material": "100% Merino wool 250gsm",
+        "fit": "Regular",
+        "features": [
+          "Naturally odour-resistant",
+          "Temperature regulating",
+          "Flatlock seams"
+        ],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 15,
+      "name": "Merino Wool Base Layer Bottom",
+      "category": "base-layers",
+      "price": 79,
+      "stock": 22,
+      "image": "",
+      "shortDescription": "Merino wool leggings with flatlock seams for comfort under ski pants.",
+      "details": {
+        "material": "100% Merino wool 250gsm",
+        "fit": "Slim",
+        "features": [
+          "Flatlock seams",
+          "No-itch next-to-skin",
+          "Machine washable"
+        ],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL"]
+      }
+    },
+    {
+      "id": 16,
+      "name": "PowerStretch Thermal Top",
+      "category": "base-layers",
+      "price": 69,
+      "stock": 30,
+      "image": "",
+      "shortDescription": "Polartec PowerStretch base layer for high-output winter activities.",
+      "details": {
+        "material": "Polartec PowerStretch Pro",
+        "fit": "Body-mapped",
+        "features": ["4-way stretch", "Moisture wicking", "Thumb loops"],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 17,
+      "name": "Expedition Heavyweight Base Layer Set",
+      "category": "base-layers",
+      "price": 149,
+      "stock": 10,
+      "image": "",
+      "shortDescription": "Top and bottom heavyweight set for extreme cold expeditions.",
+      "details": {
+        "material": "Merino wool 400gsm blend",
+        "fit": "Regular",
+        "features": [
+          "Extreme warmth",
+          "Set includes top and bottom",
+          "Reinforced knees and elbows"
+        ],
+        "gender": "unisex",
+        "sizes": ["S", "M", "L", "XL"]
+      }
+    },
+    {
+      "id": 18,
+      "name": "Alpine Ski Helmet",
+      "category": "accessories",
+      "price": 139,
+      "stock": 16,
+      "image": "",
+      "shortDescription": "Lightweight in-mould ski helmet with MIPS protection and ventilation system.",
+      "details": {
+        "material": "In-mould polycarbonate shell",
+        "protection": "MIPS rotational impact protection",
+        "weight": "380g",
+        "features": [
+          "360° fit system",
+          "Removable ear pads",
+          "Goggle clip",
+          "Ventilation control"
+        ],
+        "gender": "unisex",
+        "sizes": ["S (52-55cm)", "M (56-59cm)", "L (60-63cm)"]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Merino Beanie",
+      "category": "accessories",
+      "price": 39,
+      "stock": 40,
+      "image": "",
+      "shortDescription": "Classic merino wool beanie for everyday winter warmth.",
+      "details": {
+        "material": "100% Merino wool",
+        "features": [
+          "Ribbed knit",
+          "Double-layered brim",
+          "One size fits most"
+        ],
+        "gender": "unisex",
+        "sizes": ["One size"]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Expedition Balaclava",
+      "category": "accessories",
+      "price": 49,
+      "stock": 28,
+      "image": "",
+      "shortDescription": "Full-face balaclava for wind and cold protection in extreme conditions.",
+      "details": {
+        "material": "Polartec Wind Pro fleece",
+        "features": [
+          "Full face coverage",
+          "Moisture wicking",
+          "Can be worn as neck gaiter"
+        ],
+        "gender": "unisex",
+        "sizes": ["One size"]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Alpine Ski Gloves",
+      "category": "accessories",
+      "price": 79,
+      "stock": 20,
+      "image": "",
+      "shortDescription": "Waterproof and insulated gloves for skiing and snowboarding.",
+      "details": {
+        "material": "Goat leather palm, GORE-TEX insert",
+        "insulation": "PrimaLoft Gold 100g",
+        "features": [
+          "Pre-curved fit",
+          "Wrist leash",
+          "Touchscreen-compatible fingertips"
+        ],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL"]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Expedition Mittens",
+      "category": "accessories",
+      "price": 99,
+      "stock": 12,
+      "image": "",
+      "shortDescription": "Heavyweight expedition mittens for temperatures below -30°C.",
+      "details": {
+        "material": "GORE-TEX outer, 800-fill down insulation",
+        "features": [
+          "Removable liner glove",
+          "Extended gauntlet cuff",
+          "Wrist strap"
+        ],
+        "gender": "unisex",
+        "sizes": ["S", "M", "L", "XL"]
+      }
+    },
+    {
+      "id": 23,
+      "name": "Ski Goggles OTG",
+      "category": "accessories",
+      "price": 119,
+      "stock": 9,
+      "image": "",
+      "shortDescription": "Over-the-glasses ski goggles with spherical lens and wide field of view.",
+      "details": {
+        "lens": "Spherical anti-fog lens, VLT 18%",
+        "features": [
+          "OTG compatible",
+          "Triple-layer foam",
+          "No-fog vent system",
+          "Helmet compatible"
+        ],
+        "gender": "unisex",
+        "sizes": ["One size"]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Trekking Gaiters",
+      "category": "accessories",
+      "price": 59,
+      "stock": 17,
+      "image": "",
+      "shortDescription": "Waterproof gaiters to keep snow and moisture out of your boots.",
+      "details": {
+        "material": "GORE-TEX 2-layer",
+        "features": ["Instep strap", "Front zip with storm flap", "Boot hook"],
+        "gender": "unisex",
+        "sizes": ["S/M", "L/XL"]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Neck Gaiter",
+      "category": "accessories",
+      "price": 29,
+      "stock": 50,
+      "image": "",
+      "shortDescription": "Versatile merino neck gaiter that can be worn multiple ways.",
+      "details": {
+        "material": "Merino wool 200gsm",
+        "features": [
+          "Can be worn as hat, scarf or balaclava",
+          "Seamless construction"
+        ],
+        "gender": "unisex",
+        "sizes": ["One size"]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Touring Ski Poles",
+      "category": "equipment",
+      "price": 149,
+      "stock": 8,
+      "image": "",
+      "shortDescription": "Lightweight adjustable ski touring poles with ergonomic grips.",
+      "details": {
+        "material": "Carbon fibre shaft",
+        "weight": "260g per pole",
+        "features": [
+          "Adjustable 100-135cm",
+          "Powder baskets included",
+          "Cork grip"
+        ],
+        "gender": "unisex",
+        "sizes": ["100-135cm adjustable"]
+      }
+    },
+    {
+      "id": 27,
+      "name": "Avalanche Safety Set",
+      "category": "equipment",
+      "price": 399,
+      "stock": 5,
+      "image": "",
+      "shortDescription": "Complete avalanche safety kit: transceiver, probe, and shovel.",
+      "details": {
+        "components": [
+          "3-antenna digital transceiver",
+          "240cm aluminium probe",
+          "Extendable aluminium shovel"
+        ],
+        "weight": "980g total",
+        "features": [
+          "Digital search mode",
+          "Group check function",
+          "Durable carry bag"
+        ],
+        "gender": "unisex",
+        "sizes": ["One size"]
+      }
+    },
+    {
+      "id": 28,
+      "name": "Backcountry Snowshoes",
+      "category": "equipment",
+      "price": 189,
+      "stock": 6,
+      "image": "",
+      "shortDescription": "Aluminum snowshoes for off-trail winter hiking and backcountry travel.",
+      "details": {
+        "material": "6061 aluminium frame",
+        "weight": "1.4kg per pair",
+        "features": [
+          "Rotating toe crampon",
+          "Heel lift for uphill",
+          "Fits boots size 36-47"
+        ],
+        "gender": "unisex",
+        "sizes": ["22 inch (up to 90kg)", "25 inch (up to 120kg)"]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Winter Trekking Boots",
+      "category": "equipment",
+      "price": 259,
+      "stock": 13,
+      "image": "",
+      "shortDescription": "Insulated waterproof boots rated to -30°C for winter mountaineering.",
+      "details": {
+        "material": "Full-grain leather with GORE-TEX lining",
+        "insulation": "400g Thinsulate",
+        "temperatureRating": "-30°C",
+        "features": ["Crampon compatible", "Vibram sole", "BOA lacing system"],
+        "gender": "unisex",
+        "sizes": [
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46"
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Ski Touring Backpack 30L",
+      "category": "equipment",
+      "price": 179,
+      "stock": 10,
+      "image": "",
+      "shortDescription": "30-litre ski touring pack with avalanche gear compartment and ski carry system.",
+      "details": {
+        "volume": "30L",
+        "weight": "980g",
+        "features": [
+          "Diagonal ski carry",
+          "Avalanche gear pocket",
+          "Hydration compatible",
+          "Back protector pocket"
+        ],
+        "gender": "unisex",
+        "sizes": ["One size"]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Mountaineering Crampon",
+      "category": "equipment",
+      "price": 129,
+      "stock": 7,
+      "image": "",
+      "shortDescription": "12-point steel crampons for ice climbing and winter mountaineering.",
+      "details": {
+        "material": "Steel",
+        "points": "12-point",
+        "weight": "1.1kg per pair",
+        "features": [
+          "Compatible with B1/B2/B3 boots",
+          "Anti-balling plates included",
+          "Carry bag included"
+        ],
+        "gender": "unisex",
+        "sizes": ["S (35-40)", "M (40-44)", "L (44-48)"]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Ice Axe 60cm",
+      "category": "equipment",
+      "price": 109,
+      "stock": 9,
+      "image": "",
+      "shortDescription": "Classic straight-pick ice axe for glacier travel and winter mountaineering.",
+      "details": {
+        "material": "Aluminium shaft, steel pick and adze",
+        "weight": "420g",
+        "features": [
+          "Positive-clearance pick",
+          "Spike included",
+          "Leash compatible"
+        ],
+        "gender": "unisex",
+        "sizes": ["55cm", "60cm", "65cm"]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Fleece Midlayer Jacket",
+      "category": "base-layers",
+      "price": 99,
+      "stock": 24,
+      "image": "",
+      "shortDescription": "Polartec Classic 200 fleece midlayer for exceptional warmth-to-weight ratio.",
+      "details": {
+        "material": "Polartec Classic 200 fleece",
+        "weight": "420g",
+        "features": [
+          "Full zip",
+          "Zip hand pockets",
+          "Flatlock seams",
+          "Anti-pill finish"
+        ],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      }
+    },
+    {
+      "id": 34,
+      "name": "Heated Glove Liners",
+      "category": "accessories",
+      "price": 89,
+      "stock": 11,
+      "image": "",
+      "shortDescription": "Battery-heated glove liners for extreme cold and poor circulation.",
+      "details": {
+        "material": "Merino wool blend with carbon fibre heating elements",
+        "batteryLife": "Up to 6 hours on low setting",
+        "features": [
+          "3 heat settings",
+          "USB-C charging",
+          "Touchscreen compatible"
+        ],
+        "gender": "unisex",
+        "sizes": ["S/M", "L/XL"]
+      }
+    },
+    {
+      "id": 35,
+      "name": "Winter Running Tights",
+      "category": "base-layers",
+      "price": 79,
+      "stock": 19,
+      "image": "",
+      "shortDescription": "Wind-resistant thermal tights for cold-weather running and ski touring.",
+      "details": {
+        "material": "Polartec Wind Pro front, fleece back",
+        "features": [
+          "Reflective details",
+          "Back zip pocket",
+          "Wide waistband",
+          "Ankle zip"
+        ],
+        "gender": "unisex",
+        "sizes": ["XS", "S", "M", "L", "XL"]
+      }
+    }
+  ],
+  "categories": [
+    { "id": 1, "slug": "jackets", "name": "Jackets" },
+    { "id": 2, "slug": "sleeping-bags", "name": "Sleeping Bags" },
+    { "id": 3, "slug": "base-layers", "name": "Base Layers" },
+    { "id": 4, "slug": "accessories", "name": "Accessories" },
+    { "id": 5, "slug": "equipment", "name": "Equipment" }
+  ]
+}
