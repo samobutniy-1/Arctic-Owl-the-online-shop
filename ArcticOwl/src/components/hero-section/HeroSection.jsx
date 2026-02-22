@@ -1,4 +1,4 @@
-import owl from "../assets/images/hero-section-img.png";
+import owl from "../../assets/images/hero-section-img.png";
 
 export function HeroSection() {
   return (
