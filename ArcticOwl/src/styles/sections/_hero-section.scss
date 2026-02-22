@@ -1,5 +1,6 @@
 @use "../base/typography";
 @use "../variables/colors" as *;
+@use "../variables/shadows" as *;
 @use "../utils/functions" as *;
 
 .hero-section {
@@ -12,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     padding: em(46) em(32) em(46) em(72);
-    box-shadow: 8px 15px 4px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: $shadow;
   }
   &__text {
     line-height: auto;
@@ -50,7 +51,7 @@
       background-color: $primary-color-light;
       border-radius: 0 0 22px 22px;
       padding: 14px 42px 14px;
-      box-shadow: 10px 16px 4px rgba(0, 0, 0, 0.35);
+      box-shadow: $hero-shadow;
 
       &:hover {
         text-decoration: underline;
