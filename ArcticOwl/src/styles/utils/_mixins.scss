@@ -8,10 +8,10 @@
   $minViewportWidth: 320;
 
   // Convert all values to rem
-  $maxSize: math.div($max, 16);
-  $minSize: math.div($min, 16);
-  $maxWidth: math.div($maxViewportWidth, 16);
-  $minWidth: math.div($minViewportWidth, 16);
+  $maxSize: math.div($max, 24);
+  $minSize: math.div($min, 24);
+  $maxWidth: math.div($maxViewportWidth, 24);
+  $minWidth: math.div($minViewportWidth, 24);
 
   // Calculate fluid scaling depending on viewport width
   $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
