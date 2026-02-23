@@ -105,7 +105,17 @@
     width: 100%;
     margin-top: auto;
   }
-  &__price {
+  &__price-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__usual-price {
+    font-size: rem(16);
+    opacity: 0.5;
+  }
+  &__sale-price {
   }
   &__add-btn {
     background-color: transparent;

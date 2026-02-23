@@ -53,9 +53,15 @@ export function SalesSection() {
                         </a>
                         <h3 className="product__title">{salesProduct.name}</h3>
                         <div className="product__footer">
-                          <span className="product__price">
-                            ${salesProduct.price}
-                          </span>
+                          <div className="product__price-container">
+                            <s className="product__usual-price">
+                              ${salesProduct.price}
+                            </s>
+                            <span className="product__sale-price">
+                              ${salesProduct.salePrice}
+                            </span>
+                          </div>
+
                           <button className="product__add-btn">
                             <svg className="product__cart-icon">
                               <use href="/symbol-defs.svg#icon-cart"></use>
