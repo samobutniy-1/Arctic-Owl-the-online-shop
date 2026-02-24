@@ -8,7 +8,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 12,
-      "image": "",
+      "image": "/images/alpin-pro-shell-jacket.png",
       "shortDescription": "Waterproof hardshell jacket for alpine climbing and ski touring.",
       "details": {
         "material": "3-layer GORE-TEX Pro",
@@ -33,7 +33,7 @@
       "sale": true,
       "salePrice": 199,
       "stock": 8,
-      "image": "",
+      "image": "/images/glacier-jacket.png",
       "shortDescription": "Down-filled insulated jacket for cold mountain environments.",
       "details": {
         "material": "700-fill power duck down",
@@ -57,7 +57,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 5,
-      "image": "",
+      "image": "/images/ski-jacket.png",
       "shortDescription": "High-performance jacket built for off-piste skiing and powder days.",
       "details": {
         "material": "2.5-layer nylon ripstop",
@@ -82,7 +82,7 @@
       "sale": true,
       "salePrice": 139,
       "stock": 20,
-      "image": "",
+      "image": "/images/summit-softshell-jacket.png",
       "shortDescription": "Stretchy softshell for active mountain use in variable conditions.",
       "details": {
         "material": "Polartec Windbloc softshell",
@@ -102,7 +102,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 14,
-      "image": "",
+      "image": "/images/nordic-trail-jacket.png",
       "shortDescription": "Lightweight and packable jacket for cross-country skiing and hiking.",
       "details": {
         "material": "Pertex Quantum ripstop nylon",
@@ -150,7 +150,7 @@
       "sale": true,
       "salePrice": 349,
       "stock": 4,
-      "image": "",
+      "image": "/images/polar-explorer-parks.png",
       "shortDescription": "Expedition-grade parka for extreme cold and harsh winter conditions.",
       "details": {
         "material": "800-fill power goose down",
@@ -169,13 +169,13 @@
     },
     {
       "id": 8,
-      "name": "ArcticOwl Signature Jacket",
+      "name": "Signature Jacket",
       "category": "jackets",
       "price": 549,
       "sale": false,
       "salePrice": null,
       "stock": 3,
-      "image": "",
+      "image": "/images/signature-jacket.png",
       "shortDescription": "Our flagship jacket — the ultimate blend of warmth, protection, and style.",
       "details": {
         "material": "GORE-TEX Pro 3L with PrimaLoft Gold insulation",
@@ -317,7 +317,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 25,
-      "image": "",
+      "image": "/images/merino-beanie.png",
       "shortDescription": "250gsm merino wool long-sleeve top for warmth and odour resistance.",
       "details": {
         "material": "100% Merino wool 250gsm",
@@ -361,7 +361,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 30,
-      "image": "",
+      "image": "/images/power-stretch.png",
       "shortDescription": "Polartec PowerStretch base layer for high-output winter activities.",
       "details": {
         "material": "Polartec PowerStretch Pro",
@@ -379,7 +379,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 10,
-      "image": "",
+      "image": "/images/expedition-heavyweight-base-layer-set.png",
       "shortDescription": "Top and bottom heavyweight set for extreme cold expeditions.",
       "details": {
         "material": "Merino wool 400gsm blend",
@@ -401,7 +401,7 @@
       "sale": true,
       "salePrice": 99,
       "stock": 16,
-      "image": "",
+      "image": "/images/alpine-ski-helmet.png",
       "shortDescription": "Lightweight in-mould ski helmet with MIPS protection and ventilation system.",
       "details": {
         "material": "In-mould polycarbonate shell",
@@ -425,7 +425,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 40,
-      "image": "",
+      "image": "/images/merino-beanie.png",
       "shortDescription": "Classic merino wool beanie for everyday winter warmth.",
       "details": {
         "material": "100% Merino wool",
@@ -467,7 +467,7 @@
       "sale": true,
       "salePrice": 55,
       "stock": 20,
-      "image": "",
+      "image": "/images/alpine-ski-gloves.png",
       "shortDescription": "Waterproof and insulated gloves for skiing and snowboarding.",
       "details": {
         "material": "Goat leather palm, GORE-TEX insert",
@@ -510,7 +510,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 9,
-      "image": "",
+      "image": "/images/ski-goggles-OTG.png",
       "shortDescription": "Over-the-glasses ski goggles with spherical lens and wide field of view.",
       "details": {
         "lens": "Spherical anti-fog lens, VLT 18%",
@@ -532,7 +532,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 17,
-      "image": "",
+      "image": "/images/trekking-gaiters.png",
       "shortDescription": "Waterproof gaiters to keep snow and moisture out of your boots.",
       "details": {
         "material": "GORE-TEX 2-layer",
@@ -549,7 +549,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 50,
-      "image": "",
+      "image": "/images/neck-gaiter.png",
       "shortDescription": "Versatile merino neck gaiter that can be worn multiple ways.",
       "details": {
         "material": "Merino wool 200gsm",
@@ -569,7 +569,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 8,
-      "image": "",
+      "image": "/images/touring-ski-poles.png",
       "shortDescription": "Lightweight adjustable ski touring poles with ergonomic grips.",
       "details": {
         "material": "Carbon fibre shaft",
@@ -591,7 +591,7 @@
       "sale": true,
       "salePrice": 299,
       "stock": 5,
-      "image": "",
+      "image": "/images/avalanche-safety-set.png",
       "shortDescription": "Complete avalanche safety kit: transceiver, probe, and shovel.",
       "details": {
         "components": [
@@ -670,7 +670,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 10,
-      "image": "",
+      "image": "/images/ski-touring-backpack-30L.png",
       "shortDescription": "30-litre ski touring pack with avalanche gear compartment and ski carry system.",
       "details": {
         "volume": "30L",
@@ -693,7 +693,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 7,
-      "image": "",
+      "image": "/images/mountaineering-crampon.png",
       "shortDescription": "12-point steel crampons for ice climbing and winter mountaineering.",
       "details": {
         "material": "Steel",
@@ -716,7 +716,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 9,
-      "image": "",
+      "image": "/images/ice-axe-60cm.png",
       "shortDescription": "Classic straight-pick ice axe for glacier travel and winter mountaineering.",
       "details": {
         "material": "Aluminium shaft, steel pick and adze",
@@ -738,7 +738,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 24,
-      "image": "",
+      "image": "/images/fleece-midlayer-jacket.png",
       "shortDescription": "Polartec Classic 200 fleece midlayer for exceptional warmth-to-weight ratio.",
       "details": {
         "material": "Polartec Classic 200 fleece",
@@ -761,7 +761,7 @@
       "sale": true,
       "salePrice": 59,
       "stock": 11,
-      "image": "",
+      "image": "/images/heated-glove-liners.png",
       "shortDescription": "Battery-heated glove liners for extreme cold and poor circulation.",
       "details": {
         "material": "Merino wool blend with carbon fibre heating elements",
@@ -783,7 +783,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 19,
-      "image": "",
+      "image": "/images/winter-running-tights.png",
       "shortDescription": "Wind-resistant thermal tights for cold-weather running and ski touring.",
       "details": {
         "material": "Polartec Wind Pro front, fleece back",
