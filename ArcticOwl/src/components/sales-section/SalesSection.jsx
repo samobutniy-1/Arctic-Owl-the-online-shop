@@ -47,7 +47,9 @@ export function SalesSection() {
                         <a href="#">
                           <img
                             className="product__img"
-                            src={salesProduct.image}
+                            src={
+                              salesProduct.image || "../../images/no-image.png"
+                            }
                             alt="product image"
                           />
                         </a>

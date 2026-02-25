@@ -92,21 +92,19 @@
   &__img {
     max-width: 300px;
     max-height: 300px;
+    min-width: 300px;
     margin-bottom: 24px;
     object-fit: contain;
   }
   &__title {
     font-size: rem(32);
-    display: flex;
-    flex: 1;
-    align-items: center;
+    margin-bottom: em(36, 32);
   }
   &__footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: auto;
   }
   &__price-container {
     display: flex;
