@@ -52,11 +52,14 @@ export function SalesSection() {
                             }
                             alt="product image"
                           />
+                          <h3 className="product__title">
+                            {salesProduct.name}
+                          </h3>
                         </a>
-                        <h3 className="product__title">{salesProduct.name}</h3>
+
                         <div className="product__footer">
                           <div className="product__price-container">
-                            <s className="product__usual-price">
+                            <s className="product__old-price">
                               ${salesProduct.price}
                             </s>
                             <span className="product__sale-price">

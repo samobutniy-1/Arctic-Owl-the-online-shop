@@ -1,0 +1,30 @@
+@use "../variables/colors" as *;
+@use "../variables/shadows" as *;
+
+.products-section {
+  &__container {
+  }
+  &__content {
+    background-color: $primary-color-light;
+    border-radius: 16px;
+    padding: 50px 12px;
+    box-shadow: $shadow;
+  }
+  &__list {
+    display: grid;
+
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: $products-shadow;
+
+    border-radius: 20px;
+    border: 1px solid $border-color;
+    padding: 24px;
+  }
+}

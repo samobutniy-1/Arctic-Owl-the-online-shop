@@ -8,7 +8,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 12,
-      "image": "/images/alpin-pro-shell-jacket.png",
+      "image": "",
       "shortDescription": "Waterproof hardshell jacket for alpine climbing and ski touring.",
       "details": {
         "material": "3-layer GORE-TEX Pro",
@@ -317,7 +317,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 25,
-      "image": "/images/merino-beanie.png",
+      "image": "",
       "shortDescription": "250gsm merino wool long-sleeve top for warmth and odour resistance.",
       "details": {
         "material": "100% Merino wool 250gsm",
