@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export function Header() {
   return (
     <>
@@ -23,11 +25,11 @@ export function Header() {
             </div>
           </div>
           <div className="header__buttons buttons">
-            <a className="buttons__action-btn" href="/">
+            <Link to="/cart" className="buttons__action-btn">
               <svg className="buttons__cart-icon">
                 <use href="/symbol-defs.svg#icon-cart"></use>
               </svg>
-            </a>
+            </Link>
             <a className="buttons__burger" href="/">
               <span></span>
               <span></span>

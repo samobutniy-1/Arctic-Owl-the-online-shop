@@ -3,9 +3,9 @@
 h1 {
   @include fluid-text(48, 24);
 }
-// h2 {
-//   @include fluid-text(40, 28);
-// }
+h2 {
+  @include fluid-text(48, 16);
+}
 // h3 {
 //   @include fluid-text(36, 24);
 // }

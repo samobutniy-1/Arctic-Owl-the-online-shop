@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export function ProductsSection() {
+export function ProductsSection({ addToCart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -52,7 +52,10 @@ export function ProductsSection() {
                           )}
                         </div>
 
-                        <button className="product__add-btn">
+                        <button
+                          className="product__add-btn"
+                          onClick={() => addToCart(product)}
+                        >
                           <svg className="product__cart-icon">
                             <use href="/symbol-defs.svg#icon-cart"></use>
                           </svg>

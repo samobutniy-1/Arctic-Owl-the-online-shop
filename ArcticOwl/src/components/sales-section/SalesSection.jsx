@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-export function SalesSection() {
+export function SalesSection({ addToCart }) {
   const [sales, setSales] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -67,7 +67,10 @@ export function SalesSection() {
                             </span>
                           </div>
 
-                          <button className="product__add-btn">
+                          <button
+                            className="product__add-btn"
+                            onClick={() => addToCart(salesProduct)}
+                          >
                             <svg className="product__cart-icon">
                               <use href="/symbol-defs.svg#icon-cart"></use>
                             </svg>
