@@ -38,9 +38,9 @@ export function Cart({ cart }) {
                           className="product-card__img"
                         />
                         <div className="product-card__info">
-                          <h3 className="product-card__title">
+                          <h4 className="product-card__title">
                             {cartItem.name}
-                          </h3>
+                          </h4>
                           <span className="product-card__price">
                             $
                             {cartItem.salePrice ? (
@@ -71,7 +71,21 @@ export function Cart({ cart }) {
                     );
                   })}
                 </ul>
-                <div className="cart-section__payment-info"></div>
+                <div className="cart-section__payment-info payment-info">
+                  <h3 className="payment-info__title"></h3>
+                  <div className="payment-info__price">
+                    <span className="payment-info__products-summury">
+                      Cost of products: $100
+                    </span>
+                    <span className="payment-info__shipping">
+                      Shipping: $20
+                    </span>
+                  </div>
+                  <span className="payment-info__total">Total: $120</span>
+                  <button type="button" className="payment-info__pay-btn">
+                    to pay
+                  </button>
+                </div>
               </>
             )}
           </div>

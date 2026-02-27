@@ -6,12 +6,12 @@ h1 {
 h2 {
   @include fluid-text(48, 16);
 }
-// h3 {
-//   @include fluid-text(36, 24);
-// }
-// h4 {
-//   @include fluid-text(32, 20);
-// }
+h3 {
+  @include fluid-text(32, 16);
+}
+h4 {
+  @include fluid-text(24, 14);
+}
 // h5 {
 //   @include fluid-text(24, 20);
 // }
