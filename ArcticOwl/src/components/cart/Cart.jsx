@@ -45,7 +45,7 @@ export function Cart({ cart, updateQuantity }) {
                         className="cart-section__product-card product-card"
                       >
                         <img
-                          src={cartItem.image}
+                          src={cartItem.image || "/images/no-image.png"}
                           alt="product image"
                           className="product-card__img"
                         />
