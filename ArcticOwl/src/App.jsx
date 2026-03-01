@@ -20,10 +20,21 @@ function App() {
     });
   };
 
+  function updateQuantity(id, newQuantity) {
+    if (newQuantity < 1) return;
+    setCart(
+      cart.map((item) =>
+        item.id === id ? { ...item, quantity: newQuantity } : item,
+      ),
+    );
+  }
   return (
     <Routes>
       <Route index element={<HomePage addToCart={addToCart} />} />
-      <Route path="/cart" element={<Cart cart={cart} />} />
+      <Route
+        path="/cart"
+        element={<Cart cart={cart} updateQuantity={updateQuantity} />}
+      />
     </Routes>
   );
 }

@@ -1,6 +1,6 @@
 import { Header } from "../header/Header";
 
-export function Cart({ cart }) {
+export function Cart({ cart, updateQuantity }) {
   return (
     <>
       <Header />
@@ -42,13 +42,17 @@ export function Cart({ cart }) {
                             {cartItem.name}
                           </h4>
                           <span className="product-card__price">
-                            $
                             {cartItem.salePrice ? (
                               <>
-                                <s>{cartItem.price}</s>${cartItem.salePrice}
+                                <s className="product-card__old-price">
+                                  ${cartItem.price * cartItem.quantity}
+                                </s>
+                                <span className="product-card__sale-price">
+                                  ${cartItem.salePrice * cartItem.quantity}
+                                </span>
                               </>
                             ) : (
-                              cartItem.price
+                              <span>${cartItem.price}</span>
                             )}
                           </span>
                           <div className="product-card__quantity">
@@ -56,13 +60,42 @@ export function Cart({ cart }) {
                               type="number"
                               className="product-card__input"
                               value={cartItem.quantity}
+                              style={{
+                                width: `${String(cartItem.quantity).length}ch`,
+                              }}
+                              onChange={(e) =>
+                                updateQuantity(
+                                  cartItem.id,
+                                  Number(e.target.value),
+                                )
+                              }
                             />
                             <div className="product-card__buttons">
-                              <button className="product-card__button product-card__button--increase">
-                                up
+                              <button
+                                className="product-card__button product-card__button--increase"
+                                onClick={() =>
+                                  updateQuantity(
+                                    cartItem.id,
+                                    cartItem.quantity + 1,
+                                  )
+                                }
+                              >
+                                <svg>
+                                  <use href="/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
                               </button>
-                              <button className="product-card__button product-card__button--decrease">
-                                down
+                              <button
+                                className="product-card__button product-card__button--decrease"
+                                onClick={() =>
+                                  updateQuantity(
+                                    cartItem.id,
+                                    cartItem.quantity - 1,
+                                  )
+                                }
+                              >
+                                <svg>
+                                  <use href="/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
                               </button>
                             </div>
                           </div>
@@ -72,16 +105,22 @@ export function Cart({ cart }) {
                   })}
                 </ul>
                 <div className="cart-section__payment-info payment-info">
-                  <h3 className="payment-info__title"></h3>
-                  <div className="payment-info__price">
-                    <span className="payment-info__products-summury">
-                      Cost of products: $100
-                    </span>
-                    <span className="payment-info__shipping">
-                      Shipping: $20
-                    </span>
-                  </div>
-                  <span className="payment-info__total">Total: $120</span>
+                  <h3 className="payment-info__title">Payment info</h3>
+                  <span className="payment-info__decoration"></span>
+                  <dl className="payment-info__price">
+                    <div className="payment-info__products-cost">
+                      <dt>Cost of products:</dt>
+                      <dd>$100</dd>
+                    </div>
+                    <div className="payment-info__shipping">
+                      <dt>Shipping:</dt>
+                      <dd>$20</dd>
+                    </div>
+                  </dl>
+                  <p className="payment-info__total">
+                    <span>Total amount:</span>
+                    <span>$120</span>
+                  </p>
                   <button type="button" className="payment-info__pay-btn">
                     to pay
                   </button>
