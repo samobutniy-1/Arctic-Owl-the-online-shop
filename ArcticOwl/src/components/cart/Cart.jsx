@@ -1,6 +1,16 @@
 import { Header } from "../header/Header";
 
 export function Cart({ cart, updateQuantity }) {
+  const productsTotalPrice = () => {
+    return cart.reduce((acc, curr) => {
+      const price = curr.salePrice ?? curr.price;
+      return acc + price * curr.quantity;
+    }, 0);
+  };
+
+  const total = productsTotalPrice();
+
+  const SHIPPING = 20;
   return (
     <>
       <Header />
@@ -52,7 +62,7 @@ export function Cart({ cart, updateQuantity }) {
                                 </span>
                               </>
                             ) : (
-                              <span>${cartItem.price}</span>
+                              <span>${cartItem.price * cartItem.quantity}</span>
                             )}
                           </span>
                           <div className="product-card__quantity">
@@ -110,16 +120,16 @@ export function Cart({ cart, updateQuantity }) {
                   <dl className="payment-info__price">
                     <div className="payment-info__products-cost">
                       <dt>Cost of products:</dt>
-                      <dd>$100</dd>
+                      <dd>${total}</dd>
                     </div>
                     <div className="payment-info__shipping">
                       <dt>Shipping:</dt>
-                      <dd>$20</dd>
+                      <dd>${SHIPPING}</dd>
                     </div>
                   </dl>
                   <p className="payment-info__total">
                     <span>Total amount:</span>
-                    <span>$120</span>
+                    <span>${total + SHIPPING}</span>
                   </p>
                   <button type="button" className="payment-info__pay-btn">
                     to pay
