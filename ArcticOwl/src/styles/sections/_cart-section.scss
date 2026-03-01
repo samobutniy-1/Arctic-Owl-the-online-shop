@@ -15,6 +15,10 @@
     padding: 50px 32px;
     border-radius: 20px;
     gap: 40px;
+
+    &--empty {
+      justify-content: center;
+    }
   }
   &__empty-cart {
     display: flex;

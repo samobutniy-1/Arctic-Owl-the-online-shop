@@ -16,7 +16,9 @@ export function Cart({ cart, updateQuantity }) {
       <Header />
       <section className="cart-section">
         <div className="cart-section__container">
-          <div className="cart-section__content">
+          <div
+            className={`cart-section__content ${cart.length === 0 ? "cart-section__content--empty" : ""}`}
+          >
             {cart.length === 0 ? (
               <>
                 <div className="cart-section__empty-cart">
