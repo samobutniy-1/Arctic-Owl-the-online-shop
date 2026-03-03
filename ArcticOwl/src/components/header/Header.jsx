@@ -1,6 +1,28 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import { MenuBurger } from "../burger/MenuBurger";
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const manageBurger = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      const scrollWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      document.documentElement.style.overflow = "hidden";
+      document.documentElement.style.paddingRight = `${scrollWidth}px`;
+      document.querySelector(".header").style.paddingRight = `${scrollWidth}px`;
+    } else {
+      document.documentElement.style.overflow = "";
+      document.documentElement.style.paddingRight = "";
+      document.querySelector(".header").style.paddingRight = "";
+    }
+  }, [isOpen]);
+
   return (
     <>
       <header className="header">
@@ -30,14 +52,19 @@ export function Header() {
                 <use href="/symbol-defs.svg#icon-cart"></use>
               </svg>
             </Link>
-            <a className="buttons__burger" href="/">
+            <button
+              className="buttons__burger"
+              type="button"
+              onClick={manageBurger}
+            >
               <span></span>
               <span></span>
               <span></span>
-            </a>
+            </button>
           </div>
         </div>
       </header>
+      <MenuBurger isOpen={isOpen} onClose={manageBurger} />
     </>
   );
 }
