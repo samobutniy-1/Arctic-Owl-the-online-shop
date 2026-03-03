@@ -50,15 +50,12 @@
     padding: em(20) em(28);
     padding-right: 0;
   }
-  &__search-btn {
+  &__search-icon {
     height: 100%;
     padding: em(14);
     background-color: $primary-color-light;
-    > svg {
-      fill: $text-color;
-      max-width: em(48);
-      height: 100%;
-    }
+    max-width: em(76);
+    fill: gray;
   }
 }
 

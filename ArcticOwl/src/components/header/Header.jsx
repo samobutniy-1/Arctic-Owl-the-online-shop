@@ -2,8 +2,13 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
 
-export function Header() {
+export function Header({ query, setQuery }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const searchProduct = (e) => {
+    const value = e.target.value;
+    setQuery(value);
+  };
 
   const manageBurger = () => {
     setIsOpen((prev) => !prev);
@@ -36,14 +41,14 @@ export function Header() {
             <div className="header__input-container">
               <input
                 type="text"
-                placeholder="Search"
+                placeholder="Find yout product..."
                 className="header__input"
+                onChange={searchProduct}
+                value={query}
               />
-              <button className="header__search-btn">
-                <svg>
-                  <use href="/symbol-defs.svg#icon-search"></use>
-                </svg>
-              </button>
+              <svg className="header__search-icon">
+                <use href="/symbol-defs.svg#icon-search"></use>
+              </svg>
             </div>
           </div>
           <div className="header__buttons buttons">

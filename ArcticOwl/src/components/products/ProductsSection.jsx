@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export function ProductsSection({ addToCart }) {
+export function ProductsSection({ addToCart, query }) {
   const [products, setProducts] = useState([]);
-
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(query.toLowerCase()),
+  );
   useEffect(() => {
     const getProducts = async () => {
       const response = await axios.get("http://localhost:3001/products");
@@ -19,7 +21,7 @@ export function ProductsSection({ addToCart }) {
         <div className="products-section__container">
           <div className="products-section__content">
             <ul className="products-section__list">
-              {products.map((product) => {
+              {filteredProducts.map((product) => {
                 return (
                   <li key={product.id} className="products-section__item">
                     <article className="products-section__product product">
