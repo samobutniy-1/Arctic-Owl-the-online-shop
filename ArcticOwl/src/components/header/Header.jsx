@@ -53,7 +53,7 @@ export function Header() {
               </svg>
             </Link>
             <button
-              className="buttons__burger"
+              className={`buttons__burger ${isOpen ? "buttons__burger--active" : ""}  `}
               type="button"
               onClick={manageBurger}
             >
