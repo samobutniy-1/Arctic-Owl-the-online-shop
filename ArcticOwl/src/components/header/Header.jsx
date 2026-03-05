@@ -3,6 +3,17 @@ import { Link } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
 
 export function Header({ query, setQuery }) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const searchProduct = (e) => {
@@ -38,7 +49,9 @@ export function Header({ query, setQuery }) {
                 <use href="/symbol-defs.svg#logo-owl"></use>
               </svg>
             </a>
-            <div className="header__input-container">
+            <div
+              className={`header__input-container ${isScrolled ? "header__input-container--scrolled" : ""}`}
+            >
               <input
                 type="text"
                 placeholder="Find yout product..."
@@ -52,13 +65,16 @@ export function Header({ query, setQuery }) {
             </div>
           </div>
           <div className="header__buttons buttons">
-            <Link to="/cart" className="buttons__action-btn">
+            <Link
+              to="/cart"
+              className={`buttons__action-btn ${isScrolled ? "buttons__action-btn--scrolled" : ""} `}
+            >
               <svg className="buttons__cart-icon">
                 <use href="/symbol-defs.svg#icon-cart"></use>
               </svg>
             </Link>
             <button
-              className={`buttons__burger ${isOpen ? "buttons__burger--active" : ""}  `}
+              className={`buttons__burger ${isOpen ? "buttons__burger--active" : ""} ${isScrolled ? "buttons__burger--scrolled" : ""} `}
               type="button"
               onClick={manageBurger}
             >

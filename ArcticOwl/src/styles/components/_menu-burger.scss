@@ -71,6 +71,7 @@
     height: 38px;
     fill: $primary-color;
     transform: rotate(-90deg);
+    transition: 0.3s;
 
     &--active {
       transform: rotate(90deg);

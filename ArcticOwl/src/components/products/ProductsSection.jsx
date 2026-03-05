@@ -27,6 +27,7 @@ export function ProductsSection({ addToCart, query }) {
                     <article className="products-section__product product">
                       <a href="#">
                         <img
+                          loading="lazy"
                           className="product__img"
                           src={product.image || "../../images/no-image.png"}
                           alt="product image"

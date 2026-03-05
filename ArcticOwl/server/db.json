@@ -150,7 +150,7 @@
       "sale": true,
       "salePrice": 349,
       "stock": 4,
-      "image": "",
+      "image": "/images/polar-explorer-parka.png",
       "shortDescription": "Expedition-grade parka for extreme cold and harsh winter conditions.",
       "details": {
         "material": "800-fill power goose down",
@@ -317,7 +317,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 25,
-      "image": "",
+      "image": "/images/layer-top.png",
       "shortDescription": "250gsm merino wool long-sleeve top for warmth and odour resistance.",
       "details": {
         "material": "100% Merino wool 250gsm",
@@ -339,7 +339,7 @@
       "sale": true,
       "salePrice": 49,
       "stock": 22,
-      "image": "",
+      "image": "/images/layer-bottom.png",
       "shortDescription": "Merino wool leggings with flatlock seams for comfort under ski pants.",
       "details": {
         "material": "100% Merino wool 250gsm",
@@ -446,7 +446,7 @@
       "sale": false,
       "salePrice": null,
       "stock": 28,
-      "image": "",
+      "image": "/images/expedition-balaclava.png",
       "shortDescription": "Full-face balaclava for wind and cold protection in extreme conditions.",
       "details": {
         "material": "Polartec Wind Pro fleece",

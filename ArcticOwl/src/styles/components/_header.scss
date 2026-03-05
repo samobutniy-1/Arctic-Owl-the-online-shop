@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   height: em(116);
+
   &__container {
     height: em(76);
     display: flex;
@@ -43,6 +44,9 @@
     align-items: center;
     height: 100%;
     flex-grow: 1;
+    &--scrolled {
+      box-shadow: $header-shadow;
+    }
   }
   &__input {
     flex-grow: 1;
@@ -55,7 +59,7 @@
     padding: em(14);
     background-color: $primary-color-light;
     max-width: em(76);
-    fill: gray;
+    fill: $primary-color;
   }
 }
 
@@ -66,6 +70,9 @@
   gap: em(44);
   &__action-btn {
     @include button();
+    &--scrolled {
+      box-shadow: $header-shadow;
+    }
   }
   &__cart-icon {
     fill: $text-color;
@@ -96,6 +103,9 @@
       span:nth-child(3) {
         transform: translateY(-11px) rotate(-45deg);
       }
+    }
+    &--scrolled {
+      box-shadow: $header-shadow;
     }
   }
 }
