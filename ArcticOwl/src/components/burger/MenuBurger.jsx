@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router";
 
 export function MenuBurger({ isOpen, onClose }) {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleButton = () => {
+    setIsActive((prev) => !prev);
+  };
   return (
     <>
       <div
@@ -9,7 +15,7 @@ export function MenuBurger({ isOpen, onClose }) {
       />
 
       <div className={`burger-menu ${isOpen ? "burger-menu--open" : ""}`}>
-        <div className="burer-menu__content">
+        <div className="burger-menu__content">
           <ul className="burger-menu__list">
             <li className="burger-menu__item">
               <a href="/">Your account</a>
@@ -18,22 +24,60 @@ export function MenuBurger({ isOpen, onClose }) {
               <a href="/">About us</a>
             </li>
             <li className="burger-menu__item categories">
-              <ul className="categories__list">
-                Categories
+              <button
+                type="button"
+                className={`categories__button-container ${isActive ? "categories__button-container--active" : ""}`}
+                onClick={toggleButton}
+              >
+                <span className="categories__button">Categories</span>
+                <svg
+                  className={`categories__arrow ${isActive ? "categories__arrow--active" : ""}`}
+                >
+                  <use href="/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul
+                className={`categories__list ${isActive ? "categories__list--active" : ""}`}
+              >
                 <li className="categories__item">
-                  <a href="/">Category 1</a>
+                  <a
+                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
+                    href="/"
+                  >
+                    Category 1
+                  </a>
                 </li>
                 <li className="categories__item">
-                  <a href="/">Category 2</a>
+                  <a
+                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
+                    href="/"
+                  >
+                    Category 2
+                  </a>
                 </li>
                 <li className="categories__item">
-                  <a href="/">Category 3</a>
+                  <a
+                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
+                    href="/"
+                  >
+                    Category 3
+                  </a>
                 </li>
                 <li className="categories__item">
-                  <a href="/">Category 4</a>
+                  <a
+                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
+                    href="/"
+                  >
+                    Category 4
+                  </a>
                 </li>
                 <li className="categories__item">
-                  <a href="/">Category 5</a>
+                  <a
+                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
+                    href="/"
+                  >
+                    Category 5
+                  </a>
                 </li>
               </ul>
             </li>

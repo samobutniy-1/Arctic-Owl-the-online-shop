@@ -38,14 +38,42 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+
+    &--active {
+      gap: 14px;
+    }
   }
   &__item {
     font-size: 20px;
-    a {
-      &:hover {
-        text-decoration: underline;
-      }
+  }
+  &__link {
+    display: none;
+    &--active {
+      display: block;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__button-container {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    background-color: transparent;
+    &--active {
+      margin-bottom: 20px;
+    }
+  }
+  &__button {
+  }
+  &__arrow {
+    width: 38px;
+    height: 38px;
+    fill: $primary-color;
+    transform: rotate(-90deg);
+
+    &--active {
+      transform: rotate(90deg);
     }
   }
 }
