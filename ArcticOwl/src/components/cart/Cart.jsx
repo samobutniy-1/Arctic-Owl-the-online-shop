@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Header } from "../header/Header";
 
-export function Cart({ cart, updateQuantity }) {
+export function Cart({ cart, updateQuantity, query, setQuery }) {
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
@@ -18,7 +18,7 @@ export function Cart({ cart, updateQuantity }) {
   const SHIPPING = 20;
   return (
     <>
-      <Header />
+      <Header query={query} setQuery={setQuery} cart={cart} />
       <section className="cart-section">
         <div className="cart-section__container">
           <div

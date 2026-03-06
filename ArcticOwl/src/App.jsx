@@ -4,6 +4,7 @@ import { HomePage } from "./components/home/HomePage";
 import { Cart } from "./components/cart/Cart";
 
 function App() {
+  const [query, setQuery] = useState("");
   const [cart, setCart] = useState(() => {
     const saved = localStorage.getItem("cart");
     return saved ? JSON.parse(saved) : [];
@@ -33,10 +34,27 @@ function App() {
   }
   return (
     <Routes>
-      <Route index element={<HomePage addToCart={addToCart} />} />
+      <Route
+        index
+        element={
+          <HomePage
+            query={query}
+            setQuery={setQuery}
+            cart={cart}
+            addToCart={addToCart}
+          />
+        }
+      />
       <Route
         path="/cart"
-        element={<Cart cart={cart} updateQuantity={updateQuantity} />}
+        element={
+          <Cart
+            query={query}
+            setQuery={setQuery}
+            cart={cart}
+            updateQuantity={updateQuantity}
+          />
+        }
       />
     </Routes>
   );

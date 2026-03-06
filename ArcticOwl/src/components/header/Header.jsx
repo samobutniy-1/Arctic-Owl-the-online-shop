@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
 
-export function Header({ query, setQuery }) {
+export function Header({ query, setQuery, cart }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -72,6 +72,11 @@ export function Header({ query, setQuery }) {
               <svg className="buttons__cart-icon">
                 <use href="/symbol-defs.svg#icon-cart"></use>
               </svg>
+              <span
+                className={`buttons__indicator ${cart.length > 0 ? "buttons__indicator--active" : ""}`}
+              >
+                {cart.length > 0 && cart.length}
+              </span>
             </Link>
             <button
               className={`buttons__burger ${isOpen ? "buttons__burger--active" : ""} ${isScrolled ? "buttons__burger--scrolled" : ""} `}
