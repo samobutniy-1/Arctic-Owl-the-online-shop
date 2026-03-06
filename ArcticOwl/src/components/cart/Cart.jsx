@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Header } from "../header/Header";
 
 export function Cart({ cart, updateQuantity }) {
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   const productsTotalPrice = () => {
     return cart.reduce((acc, curr) => {
       const price = curr.salePrice ?? curr.price;

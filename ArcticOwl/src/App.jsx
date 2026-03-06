@@ -4,7 +4,10 @@ import { HomePage } from "./components/home/HomePage";
 import { Cart } from "./components/cart/Cart";
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const saved = localStorage.getItem("cart");
+    return saved ? JSON.parse(saved) : [];
+  });
 
   const addToCart = (product) => {
     setCart((prev) => {
