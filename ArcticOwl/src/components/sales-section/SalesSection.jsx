@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 export function SalesSection({ addToCart }) {
   const [sales, setSales] = useState([]);
@@ -44,7 +45,7 @@ export function SalesSection({ addToCart }) {
                   return (
                     <li key={salesProduct.id} className="sales-section__item">
                       <article className="sales-section__product product">
-                        <a href="#">
+                        <Link to="/product-details">
                           <img
                             className="product__img"
                             src={
@@ -55,7 +56,7 @@ export function SalesSection({ addToCart }) {
                           <h3 className="product__title">
                             {salesProduct.name}
                           </h3>
-                        </a>
+                        </Link>
 
                         <div className="product__footer">
                           <div className="product__price-container">

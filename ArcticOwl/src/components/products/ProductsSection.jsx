@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -25,7 +26,7 @@ export function ProductsSection({ addToCart, query }) {
                 return (
                   <li key={product.id} className="products-section__item">
                     <article className="products-section__product product">
-                      <a href="#">
+                      <Link to="/product-details">
                         <img
                           loading="lazy"
                           className="product__img"
@@ -33,7 +34,7 @@ export function ProductsSection({ addToCart, query }) {
                           alt="product image"
                         />
                         <h3 className="product__title">{product.name}</h3>
-                      </a>
+                      </Link>
 
                       <div className="product__footer">
                         <div className="product__price-container">

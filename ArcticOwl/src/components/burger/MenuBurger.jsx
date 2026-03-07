@@ -1,12 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router";
 
-export function MenuBurger({ isOpen, onClose }) {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleButton = () => {
-    setIsActive((prev) => !prev);
-  };
+export function MenuBurger({ isOpen, onClose, isActive, toggleButton }) {
   return (
     <>
       <div

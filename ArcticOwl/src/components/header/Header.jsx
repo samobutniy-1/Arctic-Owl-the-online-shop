@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
 
-export function Header({ query, setQuery, cart }) {
+export function Header({ query, setQuery, cart = [], toggleButton, isActive }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -90,7 +90,12 @@ export function Header({ query, setQuery, cart }) {
           </div>
         </div>
       </header>
-      <MenuBurger isOpen={isOpen} onClose={manageBurger} />
+      <MenuBurger
+        isOpen={isOpen}
+        onClose={manageBurger}
+        toggleButton={toggleButton}
+        isActive={isActive}
+      />
     </>
   );
 }

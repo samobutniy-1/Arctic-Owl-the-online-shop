@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router";
 import { useState } from "react";
 import { HomePage } from "./components/home/HomePage";
 import { Cart } from "./components/cart/Cart";
+import { ProductDetails } from "./components/product-details/ProductDetails";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -9,6 +10,12 @@ function App() {
     const saved = localStorage.getItem("cart");
     return saved ? JSON.parse(saved) : [];
   });
+
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleButton = () => {
+    setIsActive((prev) => !prev);
+  };
 
   const addToCart = (product) => {
     setCart((prev) => {
@@ -42,6 +49,8 @@ function App() {
             setQuery={setQuery}
             cart={cart}
             addToCart={addToCart}
+            toggleButton={toggleButton}
+            isActive={isActive}
           />
         }
       />
@@ -53,6 +62,17 @@ function App() {
             setQuery={setQuery}
             cart={cart}
             updateQuantity={updateQuantity}
+          />
+        }
+      />
+
+      <Route
+        path="/product-details"
+        element={
+          <ProductDetails
+            cart={cart}
+            toggleButton={toggleButton}
+            isActive={isActive}
           />
         }
       />
