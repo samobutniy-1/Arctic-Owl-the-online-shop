@@ -21,21 +21,21 @@ export function MenuBurger({ isOpen, onClose, isActive, toggleButton }) {
               <button
                 type="button"
                 className={`categories__button-container ${isActive ? "categories__button-container--active" : ""}`}
-                onClick={toggleButton}
+                onClick={() => toggleButton("categories")}
               >
                 <span className="categories__button">Categories</span>
                 <svg
-                  className={`categories__arrow ${isActive ? "categories__arrow--active" : ""}`}
+                  className={`categories__arrow ${isActive === "categories" ? "categories__arrow--active" : ""}`}
                 >
                   <use href="/symbol-defs.svg#icon-arrow"></use>
                 </svg>
               </button>
               <ul
-                className={`categories__list ${isActive ? "categories__list--active" : ""}`}
+                className={`categories__list ${isActive === "categories" ? "categories__list--active" : ""}`}
               >
                 <li className="categories__item">
                   <a
-                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
+                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
                     href="/"
                   >
                     Category 1

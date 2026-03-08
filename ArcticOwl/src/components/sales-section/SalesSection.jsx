@@ -45,7 +45,7 @@ export function SalesSection({ addToCart }) {
                   return (
                     <li key={salesProduct.id} className="sales-section__item">
                       <article className="sales-section__product product">
-                        <Link to="/product-details">
+                        <Link to={`/product-details/${salesProduct.id}`}>
                           <img
                             className="product__img"
                             src={

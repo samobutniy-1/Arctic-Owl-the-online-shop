@@ -11,10 +11,10 @@ function App() {
     return saved ? JSON.parse(saved) : [];
   });
 
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(null);
 
-  const toggleButton = () => {
-    setIsActive((prev) => !prev);
+  const toggleButton = (id) => {
+    setIsActive((prev) => (prev === id ? null : id));
   };
 
   const addToCart = (product) => {
@@ -67,7 +67,7 @@ function App() {
       />
 
       <Route
-        path="/product-details"
+        path="/product-details/:id"
         element={
           <ProductDetails
             cart={cart}

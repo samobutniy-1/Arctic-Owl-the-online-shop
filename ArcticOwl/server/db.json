@@ -10,6 +10,7 @@
       "stock": 12,
       "image": "",
       "shortDescription": "Waterproof hardshell jacket for alpine climbing and ski touring.",
+      "longDescription": "The Alpine Pro Shell Jacket is engineered for serious mountaineers and backcountry skiers who demand uncompromising weather protection. Built with a premium 3-layer GORE-TEX Pro membrane, this jacket provides a waterproofing rating of 20,000mm while maintaining exceptional breathability of 20,000g/m²/24h — keeping you dry from both the outside elements and internal perspiration during high-output activities. The helmet-compatible hood adjusts precisely to fit over any climbing or ski helmet, while pit zips allow rapid ventilation on steep ascents. Four strategically placed pockets keep essentials accessible even under a harness, and the integrated Recco reflector adds an extra layer of safety in avalanche terrain. Whether you're tackling a technical alpine route or pushing through a whiteout storm, the Alpine Pro Shell Jacket is built to be your last line of defence against the mountain.",
       "details": {
         "material": "3-layer GORE-TEX Pro",
         "waterproofing": "20,000mm",
@@ -35,6 +36,7 @@
       "stock": 8,
       "image": "/images/glacier-jacket.png",
       "shortDescription": "Down-filled insulated jacket for cold mountain environments.",
+      "longDescription": "The Glacier Insulated Jacket wraps you in the warmth of 700-fill power duck down, making it an ideal mid-layer or standalone jacket for cold mountain environments. The outer shell is treated with a DWR finish to repel light moisture and snow, while the packable design means you can stuff the entire jacket into its own chest pocket when the temperature rises. The adjustable hood provides added protection against biting wind and snowfall, and the inner chest pocket keeps your valuables close and secure. Whether you're belaying at a high-altitude belay station, waiting at the summit, or heading into a mountain hut after a long day on the slopes, the Glacier Insulated Jacket delivers reliable warmth without unnecessary bulk.",
       "details": {
         "material": "700-fill power duck down",
         "waterproofing": "DWR treated",
@@ -59,6 +61,7 @@
       "stock": 5,
       "image": "/images/ski-jacket.png",
       "shortDescription": "High-performance jacket built for off-piste skiing and powder days.",
+      "longDescription": "The Freeride Ski Jacket is purpose-built for off-piste skiers who live for deep powder and steep lines. Constructed from a robust 2.5-layer nylon ripstop fabric with 15,000mm waterproofing and 15,000g/m²/24h breathability, this jacket handles everything from heavy snowfall to hard-charging descents. The integrated snow skirt prevents snow from entering during falls, while the goggle pocket keeps a spare lens clean and within reach. The dedicated ski pass pocket on the forearm ensures quick access at lifts, and reinforced powder cuffs seal out snow at the wrists. Designed with a relaxed fit that allows freedom of movement over multiple layers, the Freeride Ski Jacket is your ideal companion for exploratory lines in the backcountry or charging the most demanding off-piste terrain.",
       "details": {
         "material": "2.5-layer nylon ripstop",
         "waterproofing": "15,000mm",
@@ -84,6 +87,7 @@
       "stock": 20,
       "image": "/images/summit-softshell-jacket.png",
       "shortDescription": "Stretchy softshell for active mountain use in variable conditions.",
+      "longDescription": "The Summit Softshell Jacket strikes the perfect balance between protection and mobility, making it the go-to choice for active mountain pursuits in changeable weather. Made from Polartec Windbloc softshell fabric, it offers 5,000mm waterproofing and 10,000g/m²/24h breathability — enough to handle unexpected showers while still breathing efficiently during aerobic activities. The 4-way stretch construction moves with your body whether you're climbing, skiing, or hiking, and the soft fleece inner lining provides just enough insulation for cool mountain days. Zippered hand pockets secure your essentials without adding bulk, and the streamlined cut works equally well as an outer layer in mild conditions or a mid-layer under a hardshell when the storm rolls in.",
       "details": {
         "material": "Polartec Windbloc softshell",
         "waterproofing": "5,000mm",
@@ -104,6 +108,7 @@
       "stock": 14,
       "image": "/images/nordic-trail-jacket.png",
       "shortDescription": "Lightweight and packable jacket for cross-country skiing and hiking.",
+      "longDescription": "The Nordic Trail Jacket is designed for athletes who need reliable protection without the weight penalty. Crafted from Pertex Quantum ripstop nylon with 10,000mm waterproofing and 12,000g/m²/24h breathability, it's light enough to forget you're wearing it during intense cross-country skiing or trail running sessions. When conditions improve, the entire jacket packs neatly into its own chest pocket, making it easy to stash in a race vest or backpack. The adjustable hem seals out drafts at the end of a long descent, and subtle reflective details boost visibility during early morning or evening outings. Whether you're gliding across a frozen lake on Nordic skis or pushing up a snowy trail, the Nordic Trail Jacket delivers the right amount of protection exactly when you need it.",
       "details": {
         "material": "Pertex Quantum ripstop nylon",
         "waterproofing": "10,000mm",
@@ -128,6 +133,7 @@
       "stock": 9,
       "image": "",
       "shortDescription": "Technical hardshell designed specifically for women's mountaineering.",
+      "longDescription": "The Women's Alpine Hardshell is a technical shell jacket developed specifically around the female form, delivering superior weather protection without compromising on fit or mobility. The 3-layer GORE-TEX construction provides 20,000mm waterproofing and 18,000g/m²/24h breathability, making it suitable for the most demanding alpine conditions. The women's-specific patterning ensures a precise fit through the shoulders and torso, eliminating excess fabric that can restrict movement on technical terrain. The helmet-compatible hood adjusts easily with one hand while wearing gloves, and underarm vents allow rapid temperature regulation during steep climbs. From glaciated ridgelines to stormy summit pushes, the Women's Alpine Hardshell gives female mountaineers the technical performance they deserve.",
       "details": {
         "material": "3-layer GORE-TEX",
         "waterproofing": "20,000mm",
@@ -152,6 +158,7 @@
       "stock": 4,
       "image": "/images/polar-explorer-parka.png",
       "shortDescription": "Expedition-grade parka for extreme cold and harsh winter conditions.",
+      "longDescription": "The Polar Explorer Parka is built for those who venture where temperatures plummet and the margin for error is zero. Filled with 800-fill power goose down and encased in a DWR-treated outer shell, this expedition-grade parka traps heat with extraordinary efficiency. The knee-length cut provides unmatched coverage against driving snow and arctic wind, while the fur-trimmed hood creates a warm microclimate around the face. An internal storm flap behind the main zip seals out cold air that might otherwise penetrate, and six spacious pockets — including internal chest pockets — keep essentials accessible and close to your body heat. Designed for polar expeditions, high-altitude base camps, and any environment where the cold is relentless, the Polar Explorer Parka is the warmest jacket in our lineup.",
       "details": {
         "material": "800-fill power goose down",
         "waterproofing": "DWR treated outer shell",
@@ -177,6 +184,7 @@
       "stock": 3,
       "image": "/images/signature-jacket.png",
       "shortDescription": "Our flagship jacket — the ultimate blend of warmth, protection, and style.",
+      "longDescription": "The Signature Jacket represents the pinnacle of our outerwear engineering — a masterpiece that combines the waterproof integrity of GORE-TEX Pro 3L with the insulating power of PrimaLoft Gold. With an unmatched waterproofing rating of 28,000mm and breathability of 25,000g/m²/24h, this jacket handles every condition the mountain can throw at you while keeping you dry and comfortable. The Recco avalanche reflector and dedicated RFID pocket add layers of safety and convenience rarely found in a single garment. The helmet-compatible hood is precision-engineered for technical use, and the jacket comes with a lifetime warranty — a testament to the confidence we have in its construction. Whether you're on a multi-day alpine route or simply demanding the very best, the Signature Jacket delivers without compromise.",
       "details": {
         "material": "GORE-TEX Pro 3L with PrimaLoft Gold insulation",
         "waterproofing": "28,000mm",
@@ -202,6 +210,7 @@
       "stock": 7,
       "image": "",
       "shortDescription": "Mummy-style sleeping bag rated to -20°C for winter camping and expeditions.",
+      "longDescription": "The Arctic Mummy Sleeping Bag is engineered to keep you alive and comfortable when temperatures plunge to -20°C comfort and -30°C limit. Filled with 800-fill goose down, it achieves an outstanding warmth-to-weight ratio at just 1.4kg, packing down to a compact 25x40cm for transport. The anatomical mummy cut minimises dead air space around your body, maximising thermal efficiency on the coldest nights. A draft collar around the shoulders prevents warm air from escaping when you move, while the hood cinch allows you to seal yourself in completely during extreme cold. The anti-snag zipper runs smoothly even with numb fingers, and the footbox vent lets you cool down quickly if temperatures rise unexpectedly. Whether you're ice camping, on a winter mountaineering expedition, or sleeping in a snow hole, the Arctic Mummy will keep you rested and ready.",
       "details": {
         "fill": "800-fill goose down",
         "temperatureRating": "-20°C comfort / -30°C limit",
@@ -227,6 +236,7 @@
       "stock": 11,
       "image": "",
       "shortDescription": "Versatile sleeping bag suitable for mountain huts and winter camping.",
+      "longDescription": "The Summit Pro Sleeping Bag offers a versatile combination of warmth and packability that makes it ideal for mountain hut trips, winter camping, and three-season expeditions where temperatures can unexpectedly drop. Rated to -10°C comfort and -20°C limit, the 700-fill duck down insulation provides reliable warmth at a weight of just 1.1kg. The unique zipper design allows two Summit Pro bags to be zipped together — perfect for couples or sharing body heat in extreme conditions. An internal pocket keeps your phone or valuables warm overnight, and the included compression sack reduces the pack size to an impressive 20x35cm. Whether you're a weekend warrior or a seasoned alpinist, the Summit Pro strikes the right balance between performance and value.",
       "details": {
         "fill": "700-fill duck down",
         "temperatureRating": "-10°C comfort / -20°C limit",
@@ -251,6 +261,7 @@
       "stock": 15,
       "image": "",
       "shortDescription": "Ultralight sleeping bag for fast-and-light alpinism and ski touring bivouacs.",
+      "longDescription": "The Ultralight Down Bag is the choice of fast-and-light alpinists and ski tourers who refuse to carry unnecessary weight. Filled with premium 850-fill goose down — the highest loft rating in our lineup — it delivers exceptional warmth at a featherlight 680g, packing down to just 15x28cm. Water-resistant down treatment ensures the insulation retains its loft even in damp conditions, while the minimal baffle construction reduces material weight without sacrificing thermal performance. The ultralight shell fabric shaves every possible gram without compromising durability. Rated to -5°C comfort and -15°C limit, this bag is designed for bivouacs, emergency use, or planned minimalist overnight trips where every gram counts.",
       "details": {
         "fill": "850-fill goose down",
         "temperatureRating": "-5°C comfort / -15°C limit",
@@ -275,6 +286,7 @@
       "stock": 6,
       "image": "",
       "shortDescription": "Women's-specific cut with extra insulation at core and feet.",
+      "longDescription": "The Women's Contour Sleeping Bag is designed from the ground up to address the unique thermal needs of female adventurers. Women tend to sleep colder, particularly at their core and feet, so this bag features additional 750-fill goose down insulation in precisely those areas. The women's-specific shape provides a closer fit through the hips and shoulders, eliminating cold spots caused by excess dead air space. A footbox heater pad provides targeted warmth at one of the most common problem areas, and the neck baffle seals around the shoulders to prevent warm air from escaping. Rated to -15°C comfort and -25°C limit, this bag is suitable for serious winter camping and alpine adventures. Available in Regular and Short lengths to ensure an optimal fit.",
       "details": {
         "fill": "750-fill goose down",
         "temperatureRating": "-15°C comfort / -25°C limit",
@@ -299,6 +311,7 @@
       "stock": 18,
       "image": "",
       "shortDescription": "Synthetic-fill sleeping bag that performs even when wet.",
+      "longDescription": "The Base Camp Synthetic Bag is the most practical and durable sleeping bag in our range, designed for environments where moisture is unavoidable. Unlike down, PrimaLoft Silver synthetic insulation retains up to 96% of its insulating properties when wet — a critical advantage in humid or rainy conditions. Rated to -10°C comfort and -20°C limit, this bag is suitable for a wide range of winter camping scenarios. The generous cut accommodates bulkier sleepers and allows more freedom of movement, while the easy-care synthetic fill can be machine washed at home. At 1.6kg, it's heavier than down alternatives, but the reliability and budget-friendly price point make it a favourite for base camps, mountain huts, and expeditions where wet conditions are expected.",
       "details": {
         "fill": "PrimaLoft Silver synthetic",
         "temperatureRating": "-10°C comfort / -20°C limit",
@@ -319,6 +332,7 @@
       "stock": 25,
       "image": "/images/layer-top.png",
       "shortDescription": "250gsm merino wool long-sleeve top for warmth and odour resistance.",
+      "longDescription": "The Merino Wool Base Layer Top is the foundation of any serious cold-weather layering system. Made from 100% Merino wool at 250gsm, it provides natural warmth, exceptional moisture management, and the odour resistance that merino is legendary for — allowing you to wear it day after day without washing on multi-day expeditions. The fine wool fibres are soft enough to wear directly against even the most sensitive skin, and the flatlock seams eliminate chafing under a backpack harness or ski jacket. Merino's unique ability to regulate body temperature makes this top equally effective during high-output activities like ski touring as it is during rest stops in the cold. A wardrobe essential for any mountain adventurer.",
       "details": {
         "material": "100% Merino wool 250gsm",
         "fit": "Regular",
@@ -341,6 +355,7 @@
       "stock": 22,
       "image": "/images/layer-bottom.png",
       "shortDescription": "Merino wool leggings with flatlock seams for comfort under ski pants.",
+      "longDescription": "The Merino Wool Base Layer Bottom completes the perfect merino foundation layer, pairing seamlessly with our Merino Wool Base Layer Top. Cut in a slim fit that layers smoothly under ski pants or mountaineering trousers, these leggings are made from 100% Merino wool at 250gsm. The flatlock seams run flat against the skin to prevent pressure points and chafing during long days on the mountain, and the no-itch next-to-skin feel means you'll forget you're wearing them. Machine washable for easy care at home, and naturally odour-resistant for extended use in the field. An essential component of any well-considered cold-weather layering system.",
       "details": {
         "material": "100% Merino wool 250gsm",
         "fit": "Slim",
@@ -363,6 +378,7 @@
       "stock": 30,
       "image": "/images/power-stretch.png",
       "shortDescription": "Polartec PowerStretch base layer for high-output winter activities.",
+      "longDescription": "The PowerStretch Thermal Top is engineered for athletes who push hard in cold conditions and need a base layer that can keep up. Made from Polartec PowerStretch Pro, a fabric renowned for its four-way stretch and exceptional moisture management, this top moves with every body motion without restriction. The body-mapped construction places stretch zones exactly where your body needs them most, and the moisture-wicking properties draw sweat away from the skin to prevent the chilling effect of damp fabric. Thumb loops keep the sleeves in place and bridge the gap to your gloves, ensuring no cold air sneaks in at the wrist. Whether you're ski touring, ice climbing, or winter trail running, the PowerStretch Thermal Top performs at the highest level.",
       "details": {
         "material": "Polartec PowerStretch Pro",
         "fit": "Body-mapped",
@@ -381,6 +397,7 @@
       "stock": 10,
       "image": "/images/expedition-heavyweight-base-layer-set.png",
       "shortDescription": "Top and bottom heavyweight set for extreme cold expeditions.",
+      "longDescription": "The Expedition Heavyweight Base Layer Set is designed for the most extreme cold conditions, providing a comprehensive first layer for polar expeditions, high-altitude mountaineering, and deep winter adventures. The 400gsm Merino wool blend fabric delivers serious insulation directly against the skin while still managing moisture effectively. The regular fit provides enough room to layer comfortably over the top, and reinforced knees and elbows ensure the set holds up to the rigours of technical terrain. As a complete set — top and bottom — it provides full-body thermal protection from a single trusted source, with the natural benefits of Merino including odour resistance, temperature regulation, and next-to-skin softness. When the cold is severe and the stakes are high, trust the Expedition Heavyweight Set.",
       "details": {
         "material": "Merino wool 400gsm blend",
         "fit": "Regular",
@@ -403,6 +420,7 @@
       "stock": 16,
       "image": "/images/alpine-ski-helmet.png",
       "shortDescription": "Lightweight in-mould ski helmet with MIPS protection and ventilation system.",
+      "longDescription": "The Alpine Ski Helmet combines cutting-edge safety technology with everyday comfort and versatility. The in-mould polycarbonate shell fuses the outer shell and inner liner into a single lightweight structure, resulting in a helmet that weighs just 380g without sacrificing impact protection. MIPS — Multi-directional Impact Protection System — adds a low-friction layer inside the helmet that allows the head to move slightly upon impact, significantly reducing rotational forces transmitted to the brain in angled impacts. The 360° fit system allows precise micro-adjustment for a secure and comfortable fit across a wide range of head shapes, and the removable ear pads can be taken out in warmer weather. A goggle clip keeps your eyewear secure on the lift, and the adjustable ventilation system lets you find the right temperature balance whether you're working hard on moguls or cruising on a groomed run.",
       "details": {
         "material": "In-mould polycarbonate shell",
         "protection": "MIPS rotational impact protection",
@@ -427,6 +445,7 @@
       "stock": 40,
       "image": "/images/merino-beanie.png",
       "shortDescription": "Classic merino wool beanie for everyday winter warmth.",
+      "longDescription": "The Merino Beanie is the simplest piece of kit you'll reach for most often. Knitted from 100% Merino wool, it provides natural warmth and odour resistance in a classic ribbed design that never goes out of style. The double-layered brim sits comfortably over the ears for added warmth without feeling bulky, and the one-size-fits-most construction means it works across a wide range of head sizes. Soft enough to wear all day without irritation, warm enough to take the edge off a cold morning at the trailhead, and packable enough to stuff into any jacket pocket as a backup layer — the Merino Beanie is the essential cold-weather accessory for every outdoor enthusiast.",
       "details": {
         "material": "100% Merino wool",
         "features": [
@@ -448,6 +467,7 @@
       "stock": 28,
       "image": "/images/expedition-balaclava.png",
       "shortDescription": "Full-face balaclava for wind and cold protection in extreme conditions.",
+      "longDescription": "The Expedition Balaclava provides full-face protection against biting wind, driving snow, and extreme cold, making it an essential piece of kit for high-altitude mountaineering, polar expeditions, and deep winter skiing. Made from Polartec Wind Pro fleece, it blocks wind while remaining breathable, preventing the build-up of condensation inside the mask. The ergonomic shaping fits snugly over the face without bunching under goggles, and the extended neck section can be tucked into a jacket collar for added coverage. When conditions improve, the balaclava can be quickly converted into a neck gaiter, offering versatile layering options throughout the day. Moisture-wicking properties ensure that sweat from high-output activities is drawn away from the skin to prevent chilling.",
       "details": {
         "material": "Polartec Wind Pro fleece",
         "features": [
@@ -469,6 +489,7 @@
       "stock": 20,
       "image": "/images/alpine-ski-gloves.png",
       "shortDescription": "Waterproof and insulated gloves for skiing and snowboarding.",
+      "longDescription": "The Alpine Ski Gloves deliver professional-level waterproofing and insulation in a refined design suitable for both piste skiing and light backcountry use. The durable goat leather palm provides excellent grip on poles and rope, while the integrated GORE-TEX insert creates a completely waterproof and breathable barrier around the hand. PrimaLoft Gold insulation at 100g fills provides reliable warmth without excessive bulk, allowing dexterity for operating zips, buckles, and camera controls without removing the gloves. The pre-curved fit reduces hand fatigue over a long day of skiing, the wrist leash prevents loss if you need to take them off, and touchscreen-compatible fingertips mean you can use your phone without exposing your hands to the cold.",
       "details": {
         "material": "Goat leather palm, GORE-TEX insert",
         "insulation": "PrimaLoft Gold 100g",
@@ -491,6 +512,7 @@
       "stock": 12,
       "image": "",
       "shortDescription": "Heavyweight expedition mittens for temperatures below -30°C.",
+      "longDescription": "The Expedition Mittens are the ultimate hand protection system for temperatures that plunge below -30°C. The GORE-TEX outer shell provides complete waterproofing and wind resistance, while 800-fill down insulation — the same premium material used in our finest sleeping bags — creates a warm cocoon around the hand. The removable liner glove allows you to perform technical tasks requiring dexterity without fully exposing your hand to the elements, then quickly return the outer mitten for full protection. The extended gauntlet cuff reaches well up the forearm and can be tightened over or under a jacket sleeve to seal out cold air completely. A wrist strap ensures you won't lose a mitten in a storm. For polar explorers, extreme mountaineers, and anyone who has ever experienced dangerously cold hands, the Expedition Mittens are a non-negotiable piece of safety equipment.",
       "details": {
         "material": "GORE-TEX outer, 800-fill down insulation",
         "features": [
@@ -512,6 +534,7 @@
       "stock": 9,
       "image": "/images/ski-goggles-OTG.png",
       "shortDescription": "Over-the-glasses ski goggles with spherical lens and wide field of view.",
+      "longDescription": "The Ski Goggles OTG are engineered specifically for skiers and snowboarders who wear prescription glasses, offering a generous frame depth and flexible OTG-compatible foam that accommodates most eyeglass frames comfortably. The spherical anti-fog lens with 18% VLT (Visible Light Transmission) is optimised for bright sunny days and high-contrast snow conditions, providing a wide, distortion-free field of view. The no-fog vent system channels airflow through the frame to prevent fogging even during intense activity, and the triple-layer face foam creates a comfortable, pressure-distributing seal against the face. Fully helmet-compatible for seamless integration with any ski helmet, these goggles offer premium performance for prescription glasses wearers who deserve the same optical quality as everyone else on the mountain.",
       "details": {
         "lens": "Spherical anti-fog lens, VLT 18%",
         "features": [
@@ -534,6 +557,7 @@
       "stock": 17,
       "image": "/images/trekking-gaiters.png",
       "shortDescription": "Waterproof gaiters to keep snow and moisture out of your boots.",
+      "longDescription": "The Trekking Gaiters are an essential accessory for anyone venturing into snowy or wet terrain, sealing the gap between boot and trouser leg to keep snow, slush, and debris out of your boots all day. Made from 2-layer GORE-TEX, they provide complete waterproofing while remaining breathable enough to prevent excessive sweating inside the boot. The instep strap runs under the boot sole to keep the gaiter in position, while the front zip with integrated storm flap allows quick donning and doffing even while wearing gloves. The boot hook clips to your boot lace for a secure fit that won't slip during active movement. Compatible with most hiking, trekking, and mountaineering boots in sizes S/M and L/XL.",
       "details": {
         "material": "GORE-TEX 2-layer",
         "features": ["Instep strap", "Front zip with storm flap", "Boot hook"],
@@ -551,6 +575,7 @@
       "stock": 50,
       "image": "/images/neck-gaiter.png",
       "shortDescription": "Versatile merino neck gaiter that can be worn multiple ways.",
+      "longDescription": "The Neck Gaiter is one of the most versatile pieces of winter kit you can own. Made from 200gsm Merino wool with a seamless construction that eliminates pressure points, this single piece can be worn as a traditional neck gaiter, pulled up as a face mask, stretched over the head as a beanie, or wrapped as a lightweight scarf. The natural properties of Merino wool — odour resistance, temperature regulation, and moisture management — make it equally effective during high-intensity ski touring as it is during casual winter walks. Compact enough to stuff into any jacket pocket and light enough that you won't notice it until you need it, the Neck Gaiter is the ultimate go-anywhere cold-weather accessory.",
       "details": {
         "material": "Merino wool 200gsm",
         "features": [
@@ -571,6 +596,7 @@
       "stock": 8,
       "image": "/images/touring-ski-poles.png",
       "shortDescription": "Lightweight adjustable ski touring poles with ergonomic grips.",
+      "longDescription": "The Touring Ski Poles are built for ski tourers who need a reliable, lightweight tool for long days in the backcountry. The carbon fibre shaft delivers exceptional strength and stiffness at just 260g per pole — a significant weight saving over aluminium alternatives that adds up over hours of uphill travel. The adjustable length from 100 to 135cm allows you to find the perfect length for ascending, descending, and traversing varied terrain, and the simple locking mechanism holds the adjustment securely even under load. The ergonomic cork grip molds slightly to the shape of your hand over time for a personalised fit, and wicks away moisture to prevent slipping. Powder baskets are included for use in deep snow, and the poles are compatible with standard touring baskets for varied conditions.",
       "details": {
         "material": "Carbon fibre shaft",
         "weight": "260g per pole",
@@ -593,6 +619,7 @@
       "stock": 5,
       "image": "/images/avalanche-safety-set.png",
       "shortDescription": "Complete avalanche safety kit: transceiver, probe, and shovel.",
+      "longDescription": "The Avalanche Safety Set is a complete, integrated rescue system designed to give backcountry travellers the best possible chance of survival and rescue in an avalanche scenario. The three-antenna digital transceiver provides fast and accurate victim detection with a digital search mode that guides the rescuer directly to the buried person, while the group check function allows quick verification that all party members' beacons are transmitting before entering avalanche terrain. The 240cm aluminium probe assembles rapidly with a single pull and provides the reach needed to accurately pinpoint a buried victim's depth. The extendable aluminium shovel features an ergonomic blade and handle geometry designed for maximum digging efficiency in compacted avalanche debris. Everything packs into a durable carry bag for organised storage in your touring pack. In the backcountry, carrying — and knowing how to use — this equipment is not optional.",
       "details": {
         "components": [
           "3-antenna digital transceiver",
@@ -619,6 +646,7 @@
       "stock": 6,
       "image": "",
       "shortDescription": "Aluminum snowshoes for off-trail winter hiking and backcountry travel.",
+      "longDescription": "The Backcountry Snowshoes open up a world of winter exploration, allowing you to travel efficiently over deep snow on terrain where skis would be impractical. Constructed from a durable 6061 aluminium frame, they weigh just 1.4kg per pair while providing a stable platform across a wide range of snow conditions. The rotating toe crampon bites into the snow on ascents and provides traction on hard-packed surfaces, while the heel lift bar reduces calf fatigue on sustained uphill sections. The binding system accommodates a wide range of boot sizes from 36 to 47, and the adjustable straps secure the boot firmly without pressure points. Available in two sizes — 22 inch for users up to 90kg and 25 inch for users up to 120kg — ensuring adequate flotation for every body type.",
       "details": {
         "material": "6061 aluminium frame",
         "weight": "1.4kg per pair",
@@ -641,6 +669,7 @@
       "stock": 13,
       "image": "",
       "shortDescription": "Insulated waterproof boots rated to -30°C for winter mountaineering.",
+      "longDescription": "The Winter Trekking Boots are a full-featured mountaineering boot designed to keep your feet warm, dry, and protected in the most demanding cold-weather environments. Full-grain leather upper construction provides exceptional durability and structure, while the integrated GORE-TEX lining creates a completely waterproof and breathable inner barrier. 400g Thinsulate insulation is rated to -30°C, ensuring your feet stay warm even on the coldest high-altitude days. The Vibram outsole delivers outstanding grip on snow, ice, and mixed terrain, and the stiff sole is compatible with C1 and C2 crampons for use on glaciated routes. The BOA lacing system provides precise, even tension across the entire boot with a single dial, and can be fine-tuned with one hand while wearing gloves. A serious boot for serious winter adventures.",
       "details": {
         "material": "Full-grain leather with GORE-TEX lining",
         "insulation": "400g Thinsulate",
@@ -672,6 +701,7 @@
       "stock": 10,
       "image": "/images/ski-touring-backpack-30L.png",
       "shortDescription": "30-litre ski touring pack with avalanche gear compartment and ski carry system.",
+      "longDescription": "The Ski Touring Backpack 30L is a purpose-built touring pack that carries everything you need for a full day in the backcountry without slowing you down. The 30-litre capacity hits the sweet spot between capacity and weight — large enough for a day's food, water, layers, and safety equipment, yet compact enough to stay close to the body and not interfere with skiing. The dedicated avalanche gear pocket at the base of the pack keeps your transceiver, probe, and shovel accessible and separated from the main compartment for rapid deployment in an emergency. The diagonal ski carry system allows A-frame or diagonal carriage of your skis during boot-pack sections, and the hydration-compatible design keeps you drinking on the move. A back protector pocket adds an optional safety layer, and at just 980g, the pack adds minimal weight to your kit.",
       "details": {
         "volume": "30L",
         "weight": "980g",
@@ -695,6 +725,7 @@
       "stock": 7,
       "image": "/images/mountaineering-crampon.png",
       "shortDescription": "12-point steel crampons for ice climbing and winter mountaineering.",
+      "longDescription": "The Mountaineering Crampon is a versatile, reliable 12-point steel crampon designed for the full spectrum of winter mountaineering and ice climbing. The aggressive front points provide secure purchase on steep ice and hard snow, while the secondary points ensure stability on mixed terrain and glacier travel. The steel construction delivers outstanding durability compared to aluminium alternatives, ensuring the crampon performs reliably season after season. Anti-balling plates are included and attach easily to the underside of the crampon, preventing snow from building up under the foot — a critical safety feature on steep terrain. Compatible with B1, B2, and B3 mountaineering boots through an adjustable binding system, and a carry bag is included to protect the points and your other gear during transport.",
       "details": {
         "material": "Steel",
         "points": "12-point",
@@ -718,6 +749,7 @@
       "stock": 9,
       "image": "/images/ice-axe-60cm.png",
       "shortDescription": "Classic straight-pick ice axe for glacier travel and winter mountaineering.",
+      "longDescription": "The Ice Axe 60cm is a classic, general-purpose mountaineering axe built for glacier travel, self-arrest, and technical winter routes. The aluminium shaft provides an excellent strength-to-weight ratio at just 420g, while the steel pick and adze offer the durability required for repeated use on hard snow and ice. The positive-clearance pick geometry ensures reliable self-arrest when you need it most, and the spike at the base of the shaft can be planted for balance and belaying on moderate terrain. The axe is compatible with standard leash systems for added security on exposed sections. Available in 55cm, 60cm, and 65cm lengths to suit different heights and intended uses — a 60cm axe is suitable for most general mountaineering applications. An essential tool for anyone venturing onto glaciated terrain.",
       "details": {
         "material": "Aluminium shaft, steel pick and adze",
         "weight": "420g",
@@ -740,6 +772,7 @@
       "stock": 24,
       "image": "/images/fleece-midlayer-jacket.png",
       "shortDescription": "Polartec Classic 200 fleece midlayer for exceptional warmth-to-weight ratio.",
+      "longDescription": "The Fleece Midlayer Jacket is the workhorse of any serious cold-weather layering system. Made from Polartec Classic 200 fleece — the gold standard in mid-layer insulation for over three decades — it delivers exceptional warmth relative to its 420g weight. The full-zip construction allows precise ventilation control during aerobic activity, and two zippered hand pockets keep your fingers warm during rest stops. Flatlock seams reduce bulk under a hardshell and prevent chafing during extended wear, and the anti-pill finish maintains the jacket's appearance after repeated washing and heavy use. Equally at home as a standalone layer in mild conditions or a key insulating layer in a full cold-weather system, the Fleece Midlayer Jacket is a timeless piece of mountain kit.",
       "details": {
         "material": "Polartec Classic 200 fleece",
         "weight": "420g",
@@ -763,6 +796,7 @@
       "stock": 11,
       "image": "/images/heated-glove-liners.png",
       "shortDescription": "Battery-heated glove liners for extreme cold and poor circulation.",
+      "longDescription": "The Heated Glove Liners are a revolutionary solution for skiers, mountaineers, and outdoor workers who struggle with cold hands due to extreme temperatures or poor circulation. Carbon fibre heating elements woven into the Merino wool blend fabric deliver consistent, even heat across the entire hand surface, with three heat settings that can be adjusted easily even while wearing outer gloves. The USB-C charging system is compatible with standard power banks and charges fully in under two hours, providing up to six hours of warmth on the low setting. Touchscreen-compatible fingertips mean you can operate your phone or GPS device without removing the liners, and the slim profile fits comfortably inside any outer glove or mitten. For anyone who has suffered cold hands in the mountains, the Heated Glove Liners are a genuine game-changer.",
       "details": {
         "material": "Merino wool blend with carbon fibre heating elements",
         "batteryLife": "Up to 6 hours on low setting",
@@ -785,6 +819,7 @@
       "stock": 19,
       "image": "/images/winter-running-tights.png",
       "shortDescription": "Wind-resistant thermal tights for cold-weather running and ski touring.",
+      "longDescription": "The Winter Running Tights bridge the gap between base layer and outer shell, providing targeted wind resistance and thermal insulation for cold-weather athletes. The front panels are constructed from Polartec Wind Pro fleece, which blocks up to 98% of wind penetration to protect the exposed front of the legs, while the back panels use a softer fleece construction to maximise comfort and moisture management during high-output activities. Reflective details on the hem and back of the knee increase visibility in low-light conditions — essential for early morning or evening runs. A back zip pocket secures a gel, keys, or a small phone, and the wide waistband sits comfortably without folding or rolling during dynamic movement. An ankle zip makes pulling them on and off over running shoes effortless. Whether you're running trails, touring on skis, or training through the coldest months, these tights keep you moving comfortably.",
       "details": {
         "material": "Polartec Wind Pro front, fleece back",
         "features": [

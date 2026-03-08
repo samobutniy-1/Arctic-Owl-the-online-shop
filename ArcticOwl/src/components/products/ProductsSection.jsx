@@ -26,7 +26,7 @@ export function ProductsSection({ addToCart, query }) {
                 return (
                   <li key={product.id} className="products-section__item">
                     <article className="products-section__product product">
-                      <Link to="/product-details">
+                      <Link to={`/product-details/${product.id}`}>
                         <img
                           loading="lazy"
                           className="product__img"
