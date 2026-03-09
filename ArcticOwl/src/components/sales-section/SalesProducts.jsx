@@ -4,7 +4,7 @@ import axios from "axios";
 
 import { Header } from "../header/Header";
 
-export function SalesProducts({ addToCart }) {
+export function SalesProducts({ addToCart, cart, toggleButton, isActive }) {
   const [salesProducts, setSalesProducts] = useState([]);
   useEffect(() => {
     const getSalesProductsData = async () => {
@@ -18,7 +18,7 @@ export function SalesProducts({ addToCart }) {
   }, []);
   return (
     <>
-      <Header />
+      <Header cart={cart} toggleButton={toggleButton} isActive={isActive} />
       <div className="sales-products-section">
         <div className="sales-products-section__container">
           <div className="sales-products-section__content">

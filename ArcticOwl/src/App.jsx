@@ -64,6 +64,8 @@ function App() {
             cart={cart}
             setCart={setCart}
             updateQuantity={updateQuantity}
+            toggleButton={toggleButton}
+            isActive={isActive}
           />
         }
       />
@@ -82,7 +84,14 @@ function App() {
 
       <Route
         path="/sales-products"
-        element={<SalesProducts addToCart={addToCart} />}
+        element={
+          <SalesProducts
+            addToCart={addToCart}
+            cart={cart}
+            toggleButton={toggleButton}
+            isActive={isActive}
+          />
+        }
       />
     </Routes>
   );
