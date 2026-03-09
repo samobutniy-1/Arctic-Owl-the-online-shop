@@ -62,7 +62,11 @@ function renderDetails(details, selectedSize, setSelectedSize) {
       if (Array.isArray(value)) {
         return (
           <li key={key} className={`details__item details__item--${key}`}>
-            <span className="details__label">{label}:</span>
+            <span
+              className={`details__label ${key === "features" || key === "components" ? "details__label--list" : ""}`}
+            >
+              {label}:
+            </span>
             <ul className="details__list">
               {value.map((v, i) => (
                 <li key={i} className="details__list-item">

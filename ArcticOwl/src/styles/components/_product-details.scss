@@ -99,7 +99,6 @@
       display: grid;
       grid-template-columns: max-content 1fr;
       gap: 24px 8px;
-      align-items: center;
     }
   }
 }
@@ -111,9 +110,15 @@
 
   &__label {
     white-space: nowrap;
+    align-self: center;
+
+    &--list {
+      align-self: start;
+    }
   }
 
   &__value {
+    align-self: center;
   }
 
   &__list {
@@ -123,6 +128,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    align-self: start;
 
     .details__item--features &,
     .details__item--components & {
