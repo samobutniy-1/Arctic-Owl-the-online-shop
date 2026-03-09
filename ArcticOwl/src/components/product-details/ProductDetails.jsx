@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import data from "../../../server/db.json";
+import axios from "axios";
 import { Header } from "../header/Header";
 
 const labelMap = {
@@ -87,11 +87,31 @@ function renderDetails(details, selectedSize, setSelectedSize) {
     });
 }
 
-export function ProductDetails({ toggleButton, isActive, cart }) {
+export function ProductDetails({ toggleButton, isActive, cart, addToCart }) {
   const { id } = useParams();
-  const product = data.products.find((p) => p.id === Number(id));
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [selectedSize, setSelectedSize] = useState(null);
 
+  useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:3001/products/${id}`,
+        );
+        setProduct(response.data);
+      } catch (error) {
+        console.error("Failed to fetch product:", error);
+        setProduct(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    getProduct();
+  }, [id]);
+
+  if (loading) return <p>Loading...</p>;
   if (!product) return <p>Product is not found</p>;
 
   return (
@@ -152,7 +172,10 @@ export function ProductDetails({ toggleButton, isActive, cart }) {
                 </ul>
               </div>
             </div>
-            <button className="details-section__add-btn button">
+            <button
+              className="details-section__add-btn button"
+              onClick={() => addToCart(product)}
+            >
               ADD TO CART
             </button>
           </div>

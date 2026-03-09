@@ -74,6 +74,7 @@ function App() {
             cart={cart}
             toggleButton={toggleButton}
             isActive={isActive}
+            addToCart={addToCart}
           />
         }
       />
