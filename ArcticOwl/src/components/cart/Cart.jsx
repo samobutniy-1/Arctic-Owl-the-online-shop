@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Header } from "../header/Header";
 
-export function Cart({ cart, updateQuantity, query, setQuery }) {
+export function Cart({ cart, setCart, updateQuantity, query, setQuery }) {
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
@@ -16,6 +16,10 @@ export function Cart({ cart, updateQuantity, query, setQuery }) {
   const total = productsTotalPrice();
 
   const SHIPPING = 20;
+
+  const removeFromCart = (id) => {
+    setCart((prev) => prev.filter((p) => p.id !== id));
+  };
   return (
     <>
       <Header query={query} setQuery={setQuery} cart={cart} />
@@ -73,48 +77,57 @@ export function Cart({ cart, updateQuantity, query, setQuery }) {
                             )}
                           </span>
                           <div className="product-card__quantity">
-                            <input
-                              type="number"
-                              className="product-card__input"
-                              value={cartItem.quantity}
-                              style={{
-                                width: `${String(cartItem.quantity).length}ch`,
-                              }}
-                              onChange={(e) =>
-                                updateQuantity(
-                                  cartItem.id,
-                                  Number(e.target.value),
-                                )
-                              }
-                            />
-                            <div className="product-card__buttons">
-                              <button
-                                className="product-card__button product-card__button--increase"
-                                onClick={() =>
+                            <div className="product-card__input-container">
+                              <input
+                                type="number"
+                                className="product-card__input"
+                                value={cartItem.quantity}
+                                style={{
+                                  width: `${String(cartItem.quantity).length}ch`,
+                                }}
+                                onChange={(e) =>
                                   updateQuantity(
                                     cartItem.id,
-                                    cartItem.quantity + 1,
+                                    Number(e.target.value),
                                   )
                                 }
-                              >
-                                <svg>
-                                  <use href="/symbol-defs.svg#icon-arrow"></use>
-                                </svg>
-                              </button>
-                              <button
-                                className="product-card__button product-card__button--decrease"
-                                onClick={() =>
-                                  updateQuantity(
-                                    cartItem.id,
-                                    cartItem.quantity - 1,
-                                  )
-                                }
-                              >
-                                <svg>
-                                  <use href="/symbol-defs.svg#icon-arrow"></use>
-                                </svg>
-                              </button>
+                              />
+                              <div className="product-card__buttons">
+                                <button
+                                  className="product-card__button product-card__button--increase"
+                                  onClick={() =>
+                                    updateQuantity(
+                                      cartItem.id,
+                                      cartItem.quantity + 1,
+                                    )
+                                  }
+                                >
+                                  <svg>
+                                    <use href="/symbol-defs.svg#icon-arrow"></use>
+                                  </svg>
+                                </button>
+                                <button
+                                  className="product-card__button product-card__button--decrease"
+                                  onClick={() =>
+                                    updateQuantity(
+                                      cartItem.id,
+                                      cartItem.quantity - 1,
+                                    )
+                                  }
+                                >
+                                  <svg>
+                                    <use href="/symbol-defs.svg#icon-arrow"></use>
+                                  </svg>
+                                </button>
+                              </div>
                             </div>
+
+                            <button
+                              onClick={() => removeFromCart(cartItem.id)}
+                              className="product-card__delete-button"
+                            >
+                              Delete
+                            </button>
                           </div>
                         </div>
                       </li>

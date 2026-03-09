@@ -61,6 +61,7 @@ function App() {
             query={query}
             setQuery={setQuery}
             cart={cart}
+            setCart={setCart}
             updateQuantity={updateQuantity}
           />
         }
