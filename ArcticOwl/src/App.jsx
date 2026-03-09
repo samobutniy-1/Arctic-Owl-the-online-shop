@@ -3,6 +3,7 @@ import { useState } from "react";
 import { HomePage } from "./components/home/HomePage";
 import { Cart } from "./components/cart/Cart";
 import { ProductDetails } from "./components/product-details/ProductDetails";
+import { SalesProducts } from "./components/sales-section/SalesProducts";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -77,6 +78,11 @@ function App() {
             addToCart={addToCart}
           />
         }
+      />
+
+      <Route
+        path="/sales-products"
+        element={<SalesProducts addToCart={addToCart} />}
       />
     </Routes>
   );

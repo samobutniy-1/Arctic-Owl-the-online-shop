@@ -25,7 +25,7 @@ export function SalesSection({ addToCart }) {
         <div className="sales-section__container">
           <div className="sales-section__top">
             <h2 className="sales-section__topic">Sales</h2>
-            <a href="#" className="sales-section__view-more-link">
+            <a href="/sales-products" className="sales-section__view-more-link">
               view more
             </a>
           </div>

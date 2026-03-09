@@ -151,7 +151,11 @@ export function Cart({ cart, setCart, updateQuantity, query, setQuery }) {
                     <span>Total amount:</span>
                     <span>${total + SHIPPING}</span>
                   </p>
-                  <button type="button" className="payment-info__pay-btn">
+                  <button
+                    onClick={() => alert("payment was successful")}
+                    type="button"
+                    className="payment-info__pay-btn"
+                  >
                     to pay
                   </button>
                 </div>
