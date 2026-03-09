@@ -22,7 +22,8 @@
     align-items: center;
     justify-content: center;
     box-shadow: $products-shadow;
-
+    max-width: 420px;
+    justify-self: center;
     border-radius: 20px;
     border: 1px solid $border-color;
     padding: 24px;
