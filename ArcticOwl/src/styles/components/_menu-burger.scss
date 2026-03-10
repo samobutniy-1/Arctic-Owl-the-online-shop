@@ -24,7 +24,8 @@
   }
   &__item {
     font-size: 24px;
-    a {
+    button {
+      background-color: transparent;
       &:hover {
         text-decoration: underline;
       }

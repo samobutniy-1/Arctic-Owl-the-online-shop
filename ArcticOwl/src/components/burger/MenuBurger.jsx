@@ -1,6 +1,19 @@
 import { Link } from "react-router";
 
-export function MenuBurger({ isOpen, onClose, isActive, toggleButton }) {
+export function MenuBurger({
+  isOpen,
+  onClose,
+  isActive,
+  toggleButton,
+  setActiveCategory,
+  productsSectionRef,
+}) {
+  const handleCategoryClick = (value) => {
+    setActiveCategory(value);
+    productsSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    onClose();
+  };
+
   return (
     <>
       <div
@@ -34,44 +47,44 @@ export function MenuBurger({ isOpen, onClose, isActive, toggleButton }) {
                 className={`categories__list ${isActive === "categories" ? "categories__list--active" : ""}`}
               >
                 <li className="categories__item">
-                  <a
+                  <button
                     className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
-                    href="/"
+                    onClick={() => handleCategoryClick("jackets")}
                   >
-                    Category 1
-                  </a>
+                    Jackets
+                  </button>
                 </li>
                 <li className="categories__item">
-                  <a
-                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
-                    href="/"
+                  <button
+                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
+                    onClick={() => handleCategoryClick("sleeping-bags")}
                   >
-                    Category 2
-                  </a>
+                    Sleeping Bags
+                  </button>
                 </li>
                 <li className="categories__item">
-                  <a
-                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
-                    href="/"
+                  <button
+                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
+                    onClick={() => handleCategoryClick("base-layers")}
                   >
-                    Category 3
-                  </a>
+                    Base Layers
+                  </button>
                 </li>
                 <li className="categories__item">
-                  <a
-                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
-                    href="/"
+                  <button
+                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
+                    onClick={() => handleCategoryClick("accessories")}
                   >
-                    Category 4
-                  </a>
+                    Accessories
+                  </button>
                 </li>
                 <li className="categories__item">
-                  <a
-                    className={`categories__link ${isActive ? "categories__link--active" : ""}`}
-                    href="/"
+                  <button
+                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
+                    onClick={() => handleCategoryClick("equipment")}
                   >
-                    Category 5
-                  </a>
+                    Equipment
+                  </button>
                 </li>
               </ul>
             </li>

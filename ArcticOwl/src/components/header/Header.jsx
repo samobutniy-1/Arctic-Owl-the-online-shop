@@ -9,6 +9,7 @@ export function Header({
   toggleButton,
   isActive,
   setActiveCategory,
+  productsSectionRef,
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -103,6 +104,8 @@ export function Header({
         onClose={manageBurger}
         toggleButton={toggleButton}
         isActive={isActive}
+        setActiveCategory={setActiveCategory}
+        productsSectionRef={productsSectionRef}
       />
     </>
   );

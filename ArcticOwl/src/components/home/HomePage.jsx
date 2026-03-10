@@ -30,6 +30,7 @@ export function HomePage({
           setQuery={setQuery}
           cart={cart}
           setActiveCategory={setActiveCategory}
+          productsSectionRef={productsSectionRef}
         />
         {!isSearching && (
           <HeroSection
