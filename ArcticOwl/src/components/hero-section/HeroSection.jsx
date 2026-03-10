@@ -1,6 +1,11 @@
 import owl from "../../assets/images/hero-section-img.png";
 
-export function HeroSection() {
+export function HeroSection({ setActiveCategory, productsSectionRef }) {
+  const handleCategoryClick = (value) => {
+    setActiveCategory(value);
+    productsSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <section className="hero-section">
@@ -21,11 +26,21 @@ export function HeroSection() {
           </div>
 
           <div className="hero-section__nav-links">
-            <a href="#">About us</a>
-            <a href="#">Jackets</a>
-            <a href="#">Knitwear</a>
-            <a href="#">Accessories</a>
-            <a href="#">Sale</a>
+            <button onClick={() => handleCategoryClick("jackets")}>
+              Jackets
+            </button>
+            <button onClick={() => handleCategoryClick("sleeping-bags")}>
+              Sleeping bags
+            </button>
+            <button onClick={() => handleCategoryClick("base-layers")}>
+              Base layers
+            </button>
+            <button onClick={() => handleCategoryClick("accessories")}>
+              Accessories
+            </button>
+            <button onClick={() => handleCategoryClick("equipment")}>
+              Equipment
+            </button>
           </div>
         </div>
       </section>

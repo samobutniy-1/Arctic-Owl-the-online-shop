@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { useRef } from "react";
+
 import { Header } from "../header/Header";
 import { HeroSection } from "../hero-section/HeroSection";
 import { SalesSection } from "../sales-section/SalesSection";
@@ -13,6 +16,10 @@ export function HomePage({
 }) {
   const isSearching = query.length > 0;
 
+  const [activeCategory, setActiveCategory] = useState(null);
+
+  const productsSectionRef = useRef(null);
+
   return (
     <>
       <div className="wrapper">
@@ -22,10 +29,22 @@ export function HomePage({
           query={query}
           setQuery={setQuery}
           cart={cart}
+          setActiveCategory={setActiveCategory}
         />
-        {!isSearching && <HeroSection />}
+        {!isSearching && (
+          <HeroSection
+            activeCategory={activeCategory}
+            setActiveCategory={setActiveCategory}
+            productsSectionRef={productsSectionRef}
+          />
+        )}
         {!isSearching && <SalesSection addToCart={addToCart} />}
-        <ProductsSection addToCart={addToCart} query={query} />
+        <ProductsSection
+          activeCategory={activeCategory}
+          addToCart={addToCart}
+          query={query}
+          ref={productsSectionRef}
+        />
       </div>
     </>
   );

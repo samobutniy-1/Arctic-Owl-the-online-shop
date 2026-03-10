@@ -2,7 +2,14 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
 
-export function Header({ query, setQuery, cart = [], toggleButton, isActive }) {
+export function Header({
+  query,
+  setQuery,
+  cart = [],
+  toggleButton,
+  isActive,
+  setActiveCategory,
+}) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,6 +26,7 @@ export function Header({ query, setQuery, cart = [], toggleButton, isActive }) {
   const searchProduct = (e) => {
     const value = e.target.value;
     setQuery(value);
+    setActiveCategory(null);
   };
 
   const manageBurger = () => {

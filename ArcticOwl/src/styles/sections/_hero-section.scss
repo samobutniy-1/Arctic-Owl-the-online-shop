@@ -46,11 +46,11 @@
     display: flex;
     justify-content: space-between;
 
-    a {
+    button {
       text-align: center;
       background-color: $primary-color-light;
       border-radius: 0 0 22px 22px;
-      padding: 14px 42px 14px;
+      padding: 6px 42px 8px;
       box-shadow: $hero-shadow;
 
       &:hover {

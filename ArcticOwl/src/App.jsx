@@ -7,17 +7,22 @@ import { SalesProducts } from "./components/sales-section/SalesProducts";
 
 function App() {
   const [query, setQuery] = useState("");
+
+  // Initialise cart from localStorage to persist state across sessions
   const [cart, setCart] = useState(() => {
     const saved = localStorage.getItem("cart");
     return saved ? JSON.parse(saved) : [];
   });
 
+  // Categories control
   const [isActive, setIsActive] = useState(null);
 
+  // Toggle active dropdown by id — collapses if the same id is clicked again
   const toggleButton = (id) => {
     setIsActive((prev) => (prev === id ? null : id));
   };
 
+  // Upsert product into cart — increments quantity if already present
   const addToCart = (product) => {
     setCart((prev) => {
       const existing = prev.find((item) => item.id === product.id);
@@ -32,6 +37,7 @@ function App() {
     });
   };
 
+  // Enforce minimum quantity of 1 to prevent invalid cart state
   function updateQuantity(id, newQuantity) {
     if (newQuantity < 1) return;
     setCart(
@@ -40,6 +46,7 @@ function App() {
       ),
     );
   }
+
   return (
     <Routes>
       <Route
@@ -69,7 +76,6 @@ function App() {
           />
         }
       />
-
       <Route
         path="/product-details/:id"
         element={
@@ -81,7 +87,6 @@ function App() {
           />
         }
       />
-
       <Route
         path="/sales-products"
         element={
