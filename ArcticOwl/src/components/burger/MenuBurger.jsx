@@ -1,13 +1,15 @@
+import { useContext } from "react";
 import { Link } from "react-router";
+import { BurgerContext } from "../../context/AppContexts";
 
 export function MenuBurger({
   isOpen,
   onClose,
-  isActive,
-  toggleButton,
   setActiveCategory,
   productsSectionRef,
 }) {
+  const { toggleButton, isActive } = useContext(BurgerContext);
+
   const handleCategoryClick = (value) => {
     setActiveCategory(value);
     productsSectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -46,46 +48,23 @@ export function MenuBurger({
               <ul
                 className={`categories__list ${isActive === "categories" ? "categories__list--active" : ""}`}
               >
-                <li className="categories__item">
-                  <button
-                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
-                    onClick={() => handleCategoryClick("jackets")}
-                  >
-                    Jackets
-                  </button>
-                </li>
-                <li className="categories__item">
-                  <button
-                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
-                    onClick={() => handleCategoryClick("sleeping-bags")}
-                  >
-                    Sleeping Bags
-                  </button>
-                </li>
-                <li className="categories__item">
-                  <button
-                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
-                    onClick={() => handleCategoryClick("base-layers")}
-                  >
-                    Base Layers
-                  </button>
-                </li>
-                <li className="categories__item">
-                  <button
-                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
-                    onClick={() => handleCategoryClick("accessories")}
-                  >
-                    Accessories
-                  </button>
-                </li>
-                <li className="categories__item">
-                  <button
-                    className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
-                    onClick={() => handleCategoryClick("equipment")}
-                  >
-                    Equipment
-                  </button>
-                </li>
+                {[
+                  "jackets",
+                  "sleeping-bags",
+                  "base-layers",
+                  "accessories",
+                  "equipment",
+                ].map((category) => (
+                  <li key={category} className="categories__item">
+                    <button
+                      className={`categories__link ${isActive === "categories" ? "categories__link--active" : ""}`}
+                      onClick={() => handleCategoryClick(category)}
+                    >
+                      {category.charAt(0).toUpperCase() +
+                        category.slice(1).replace("-", " ")}
+                    </button>
+                  </li>
+                ))}
               </ul>
             </li>
             <li className="burger-menu__cart">

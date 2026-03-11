@@ -1,38 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
+import { CartContext, BurgerContext } from "../../context/AppContexts";
 
-export function Header({
-  query,
-  setQuery,
-  cart = [],
-  toggleButton,
-  isActive,
-  setActiveCategory,
-  productsSectionRef,
-}) {
+export function Header({ setActiveCategory, productsSectionRef }) {
+  const { cart, query, setQuery } = useContext(CartContext);
+  const { isActive } = useContext(BurgerContext);
+
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const searchProduct = (e) => {
-    const value = e.target.value;
-    setQuery(value);
-    setActiveCategory(null);
-  };
-
-  const manageBurger = () => {
-    setIsOpen((prev) => !prev);
-  };
 
   useEffect(() => {
     if (isOpen) {
@@ -47,6 +29,13 @@ export function Header({
       document.querySelector(".header").style.paddingRight = "";
     }
   }, [isOpen]);
+
+  const searchProduct = (e) => {
+    setQuery(e.target.value);
+    setActiveCategory(null);
+  };
+
+  const manageBurger = () => setIsOpen((prev) => !prev);
 
   return (
     <>
@@ -76,7 +65,7 @@ export function Header({
           <div className="header__buttons buttons">
             <Link
               to="/cart"
-              className={`buttons__action-btn ${isScrolled ? "buttons__action-btn--scrolled" : ""} `}
+              className={`buttons__action-btn ${isScrolled ? "buttons__action-btn--scrolled" : ""}`}
             >
               <svg className="buttons__cart-icon">
                 <use href="/symbol-defs.svg#icon-cart"></use>
@@ -88,7 +77,7 @@ export function Header({
               </span>
             </Link>
             <button
-              className={`buttons__burger ${isOpen ? "buttons__burger--active" : ""} ${isScrolled ? "buttons__burger--scrolled" : ""} `}
+              className={`buttons__burger ${isOpen ? "buttons__burger--active" : ""} ${isScrolled ? "buttons__burger--scrolled" : ""}`}
               type="button"
               onClick={manageBurger}
             >
@@ -102,7 +91,6 @@ export function Header({
       <MenuBurger
         isOpen={isOpen}
         onClose={manageBurger}
-        toggleButton={toggleButton}
         isActive={isActive}
         setActiveCategory={setActiveCategory}
         productsSectionRef={productsSectionRef}

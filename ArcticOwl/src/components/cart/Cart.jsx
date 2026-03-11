@@ -1,18 +1,9 @@
-import { useEffect } from "react";
+import { useContext } from "react";
 import { Header } from "../header/Header";
+import { CartContext, BurgerContext } from "../../context/AppContexts";
 
-export function Cart({
-  cart,
-  setCart,
-  updateQuantity,
-  query,
-  setQuery,
-  toggleButton,
-  isActive,
-}) {
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+export function Cart() {
+  const { cart, setCart, updateQuantity } = useContext(CartContext);
 
   const productsTotalPrice = () => {
     return cart.reduce((acc, curr) => {
@@ -22,131 +13,118 @@ export function Cart({
   };
 
   const total = productsTotalPrice();
-
   const SHIPPING = 20;
 
   const removeFromCart = (id) => {
     setCart((prev) => prev.filter((p) => p.id !== id));
   };
+
   return (
     <>
-      <Header
-        query={query}
-        setQuery={setQuery}
-        cart={cart}
-        toggleButton={toggleButton}
-        isActive={isActive}
-      />
+      <Header />
       <section className="cart-section">
         <div className="cart-section__container">
           <div
             className={`cart-section__content ${cart.length === 0 ? "cart-section__content--empty" : ""}`}
           >
             {cart.length === 0 ? (
-              <>
-                <div className="cart-section__empty-cart">
-                  <h2 className="cart-section__empty-title">
-                    Your cart is still empty...
-                  </h2>
-                  <img
-                    className="cart-section__empty-img"
-                    src="/images/empty-cart.png"
-                    alt="empty cart image"
-                  />
-                  <a className="cart-section__empty-link" href="/">
-                    go shopping
-                  </a>
-                </div>
-              </>
+              <div className="cart-section__empty-cart">
+                <h2 className="cart-section__empty-title">
+                  Your cart is still empty...
+                </h2>
+                <img
+                  className="cart-section__empty-img"
+                  src="/images/empty-cart.png"
+                  alt="empty cart image"
+                />
+                <a className="cart-section__empty-link" href="/">
+                  go shopping
+                </a>
+              </div>
             ) : (
               <>
                 <ul className="cart-section__product-container">
-                  {cart.map((cartItem) => {
-                    return (
-                      <li
-                        key={cartItem.id}
-                        className="cart-section__product-card product-card"
-                      >
-                        <img
-                          src={cartItem.image || "/images/no-image.png"}
-                          alt="product image"
-                          className="product-card__img"
-                        />
-                        <div className="product-card__info">
-                          <h4 className="product-card__title">
-                            {cartItem.name}
-                          </h4>
-                          <span className="product-card__price">
-                            {cartItem.salePrice ? (
-                              <>
-                                <s className="product-card__old-price">
-                                  ${cartItem.price * cartItem.quantity}
-                                </s>
-                                <span className="product-card__sale-price">
-                                  ${cartItem.salePrice * cartItem.quantity}
-                                </span>
-                              </>
-                            ) : (
-                              <span>${cartItem.price * cartItem.quantity}</span>
-                            )}
-                          </span>
-                          <div className="product-card__quantity">
-                            <div className="product-card__input-container">
-                              <input
-                                type="number"
-                                className="product-card__input"
-                                value={cartItem.quantity}
-                                style={{
-                                  width: `${String(cartItem.quantity).length}ch`,
-                                }}
-                                onChange={(e) =>
+                  {cart.map((cartItem) => (
+                    <li
+                      key={cartItem.id}
+                      className="cart-section__product-card product-card"
+                    >
+                      <img
+                        src={cartItem.image || "/images/no-image.png"}
+                        alt="product image"
+                        className="product-card__img"
+                      />
+                      <div className="product-card__info">
+                        <h4 className="product-card__title">{cartItem.name}</h4>
+                        <span className="product-card__price">
+                          {cartItem.salePrice ? (
+                            <>
+                              <s className="product-card__old-price">
+                                ${cartItem.price * cartItem.quantity}
+                              </s>
+                              <span className="product-card__sale-price">
+                                ${cartItem.salePrice * cartItem.quantity}
+                              </span>
+                            </>
+                          ) : (
+                            <span>${cartItem.price * cartItem.quantity}</span>
+                          )}
+                        </span>
+                        <div className="product-card__quantity">
+                          <div className="product-card__input-container">
+                            <input
+                              type="number"
+                              className="product-card__input"
+                              value={cartItem.quantity}
+                              style={{
+                                width: `${String(cartItem.quantity).length}ch`,
+                              }}
+                              onChange={(e) =>
+                                updateQuantity(
+                                  cartItem.id,
+                                  Number(e.target.value),
+                                )
+                              }
+                            />
+                            <div className="product-card__buttons">
+                              <button
+                                className="product-card__button product-card__button--increase"
+                                onClick={() =>
                                   updateQuantity(
                                     cartItem.id,
-                                    Number(e.target.value),
+                                    cartItem.quantity + 1,
                                   )
                                 }
-                              />
-                              <div className="product-card__buttons">
-                                <button
-                                  className="product-card__button product-card__button--increase"
-                                  onClick={() =>
-                                    updateQuantity(
-                                      cartItem.id,
-                                      cartItem.quantity + 1,
-                                    )
-                                  }
-                                >
-                                  <svg>
-                                    <use href="/symbol-defs.svg#icon-arrow"></use>
-                                  </svg>
-                                </button>
-                                <button
-                                  className="product-card__button product-card__button--decrease"
-                                  onClick={() =>
-                                    updateQuantity(
-                                      cartItem.id,
-                                      cartItem.quantity - 1,
-                                    )
-                                  }
-                                >
-                                  <svg>
-                                    <use href="/symbol-defs.svg#icon-arrow"></use>
-                                  </svg>
-                                </button>
-                              </div>
+                              >
+                                <svg>
+                                  <use href="/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                              </button>
+                              <button
+                                className="product-card__button product-card__button--decrease"
+                                onClick={() =>
+                                  updateQuantity(
+                                    cartItem.id,
+                                    cartItem.quantity - 1,
+                                  )
+                                }
+                              >
+                                <svg>
+                                  <use href="/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                              </button>
                             </div>
-
-                            <button
-                              onClick={() => removeFromCart(cartItem.id)}
-                              className="product-card__delete-button"
-                            >
-                              Delete
-                            </button>
                           </div>
+                          <button
+                            onClick={() => removeFromCart(cartItem.id)}
+                            className="product-card__delete-button"
+                          >
+                            Delete
+                          </button>
                         </div>
-                      </li>
-                    );
-                  })}
+                      </div>
+                    </li>
+                  ))}
                 </ul>
                 <div className="cart-section__payment-info payment-info">
                   <h3 className="payment-info__title">Payment info</h3>

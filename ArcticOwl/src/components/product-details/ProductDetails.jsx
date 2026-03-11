@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router";
 import axios from "axios";
 import { Header } from "../header/Header";
+import { CartContext, BurgerContext } from "../../context/AppContexts";
 
 const labelMap = {
   sizes: "Sizes",
@@ -87,7 +88,10 @@ function renderDetails(details, selectedSize, setSelectedSize) {
     });
 }
 
-export function ProductDetails({ toggleButton, isActive, cart, addToCart }) {
+export function ProductDetails() {
+  const { addToCart } = useContext(CartContext);
+  const { toggleButton, isActive } = useContext(BurgerContext);
+
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -116,8 +120,7 @@ export function ProductDetails({ toggleButton, isActive, cart, addToCart }) {
 
   return (
     <>
-      <Header cart={cart} toggleButton={toggleButton} isActive={isActive} />
-
+      <Header />
       <section className="details-section">
         <div className="details-section__container">
           <div className="details-section__content">
@@ -130,7 +133,6 @@ export function ProductDetails({ toggleButton, isActive, cart, addToCart }) {
               </div>
               <div className="main-content__description description">
                 <h3 className="description__title">{product.name}</h3>
-
                 <button
                   onClick={() => toggleButton("about")}
                   className="description__button button"
@@ -148,7 +150,6 @@ export function ProductDetails({ toggleButton, isActive, cart, addToCart }) {
                 >
                   {product.longDescription}
                 </p>
-
                 <button
                   onClick={() => toggleButton("details")}
                   className="description__button button"
