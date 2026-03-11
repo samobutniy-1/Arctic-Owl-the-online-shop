@@ -17,6 +17,23 @@
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     gap: 20px;
   }
+  &__no-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    text-align: center;
+
+    p {
+      font-size: 20px;
+      color: $text-color;
+      margin: 0;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
   &__item {
     display: flex;
     align-items: center;
