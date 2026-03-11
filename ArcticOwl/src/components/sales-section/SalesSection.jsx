@@ -9,8 +9,6 @@ export function SalesSection() {
   const [sales, setSales] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const visibleProducts = sales.slice(currentIndex, currentIndex + 3);
-
   useEffect(() => {
     const getSalesData = async () => {
       const response = await axios.get(
@@ -20,6 +18,14 @@ export function SalesSection() {
     };
     getSalesData();
   }, []);
+
+  const handlePrev = () => {
+    setCurrentIndex((i) => Math.max(0, i - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((i) => Math.min(sales.length - 3, i + 1));
+  };
 
   return (
     <section className="sales-section">
@@ -32,7 +38,8 @@ export function SalesSection() {
         </div>
         <div className="sales-section__content">
           <button
-            onClick={() => setCurrentIndex((i) => Math.max(0, i - 1))}
+            onClick={handlePrev}
+            disabled={currentIndex === 0}
             type="button"
             className="sales-section__prev-btn"
           >
@@ -41,8 +48,13 @@ export function SalesSection() {
             </svg>
           </button>
           <div className="sales-section__products">
-            <ul className="sales-section__list">
-              {visibleProducts.map((salesProduct) => (
+            <ul
+              className="sales-section__list"
+              style={{
+                transform: `translateX(calc(-${currentIndex} * (300px + 60px)))`,
+              }}
+            >
+              {sales.map((salesProduct) => (
                 <li key={salesProduct.id} className="sales-section__item">
                   <article className="sales-section__product product">
                     <Link to={`/product-details/${salesProduct.id}`}>
@@ -77,9 +89,8 @@ export function SalesSection() {
             </ul>
           </div>
           <button
-            onClick={() =>
-              setCurrentIndex((i) => Math.min(sales.length - 3, i + 1))
-            }
+            onClick={handleNext}
+            disabled={currentIndex >= sales.length - 3}
             type="button"
             className="sales-section__next-btn"
           >

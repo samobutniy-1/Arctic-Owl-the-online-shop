@@ -40,15 +40,23 @@
     }
   }
   &__products {
+    overflow: hidden;
   }
   &__prev-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
 
     max-height: 300px;
     max-width: 62px;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
 
     svg {
       height: 48px;
@@ -60,9 +68,16 @@
     align-items: center;
     justify-content: center;
     border-radius: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
 
     max-height: 300px;
     max-width: 62px;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
 
     svg {
       height: 48px;
@@ -75,6 +90,7 @@
     justify-content: space-between;
     gap: 60px;
     padding: 0 30px 0 30px;
+    transition: transform 0.5s ease-in-out;
   }
   &__item {
   }
