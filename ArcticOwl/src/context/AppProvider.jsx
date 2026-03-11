@@ -3,6 +3,7 @@ import { BurgerContext, CartContext } from "./AppContexts";
 
 export function AppProvider({ children }) {
   const [query, setQuery] = useState("");
+  const [activeCategory, setActiveCategory] = useState(null);
 
   const [cart, setCart] = useState(() => {
     const saved = localStorage.getItem("cart");
@@ -45,7 +46,16 @@ export function AppProvider({ children }) {
   return (
     <BurgerContext.Provider value={{ toggleButton, isActive }}>
       <CartContext.Provider
-        value={{ cart, setCart, addToCart, updateQuantity, query, setQuery }}
+        value={{
+          cart,
+          setCart,
+          addToCart,
+          updateQuantity,
+          query,
+          setQuery,
+          activeCategory,
+          setActiveCategory,
+        }}
       >
         {children}
       </CartContext.Provider>

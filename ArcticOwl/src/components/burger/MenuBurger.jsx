@@ -1,18 +1,15 @@
 import { useContext } from "react";
-import { Link } from "react-router";
-import { BurgerContext } from "../../context/AppContexts";
+import { Link, useNavigate } from "react-router";
+import { BurgerContext, CartContext } from "../../context/AppContexts";
 
-export function MenuBurger({
-  isOpen,
-  onClose,
-  setActiveCategory,
-  productsSectionRef,
-}) {
+export function MenuBurger({ isOpen, onClose }) {
   const { toggleButton, isActive } = useContext(BurgerContext);
+  const { setActiveCategory } = useContext(CartContext);
+  const navigate = useNavigate();
 
   const handleCategoryClick = (value) => {
     setActiveCategory(value);
-    productsSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    navigate("/");
     onClose();
   };
 

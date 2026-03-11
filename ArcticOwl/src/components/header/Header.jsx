@@ -1,11 +1,12 @@
 import { useState, useEffect, useContext } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
 import { CartContext, BurgerContext } from "../../context/AppContexts";
 
-export function Header({ setActiveCategory, productsSectionRef }) {
-  const { cart, query, setQuery } = useContext(CartContext);
+export function Header() {
+  const { cart, query, setQuery, setActiveCategory } = useContext(CartContext);
   const { isActive } = useContext(BurgerContext);
+  const navigate = useNavigate();
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -88,13 +89,7 @@ export function Header({ setActiveCategory, productsSectionRef }) {
           </div>
         </div>
       </header>
-      <MenuBurger
-        isOpen={isOpen}
-        onClose={manageBurger}
-        isActive={isActive}
-        setActiveCategory={setActiveCategory}
-        productsSectionRef={productsSectionRef}
-      />
+      <MenuBurger isOpen={isOpen} onClose={manageBurger} />
     </>
   );
 }
