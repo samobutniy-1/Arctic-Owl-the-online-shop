@@ -1,15 +1,36 @@
-import { useState, useEffect, useContext } from "react";
-import { Link, useNavigate } from "react-router";
+import { useState, useEffect, useContext, useRef } from "react";
+import { Link, useNavigate, useLocation } from "react-router";
 import { MenuBurger } from "../burger/MenuBurger";
-import { CartContext, BurgerContext } from "../../context/AppContexts";
+import { CartContext } from "../../context/AppContexts";
 
 export function Header() {
   const { cart, query, setQuery, setActiveCategory } = useContext(CartContext);
-  const { isActive } = useContext(BurgerContext);
   const navigate = useNavigate();
+  const location = useLocation();
+  const navigationTriggeredRef = useRef(false);
+  const inputRef = useRef(null);
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (query.length > 0 && location.pathname !== "/") {
+      if (!navigationTriggeredRef.current) {
+        navigationTriggeredRef.current = true;
+        navigate("/");
+      }
+    }
+  }, [query, location.pathname, navigate]);
+
+  useEffect(() => {
+    if (location.pathname === "/" && query.length > 0) {
+      navigationTriggeredRef.current = false;
+
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 50);
+    }
+  }, [location.pathname, query]);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
@@ -32,7 +53,8 @@ export function Header() {
   }, [isOpen]);
 
   const searchProduct = (e) => {
-    setQuery(e.target.value);
+    const value = e.target.value;
+    setQuery(value);
     setActiveCategory(null);
   };
 
@@ -52,6 +74,7 @@ export function Header() {
               className={`header__input-container ${isScrolled ? "header__input-container--scrolled" : ""}`}
             >
               <input
+                ref={inputRef}
                 type="text"
                 placeholder="Find yout product..."
                 className="header__input"
