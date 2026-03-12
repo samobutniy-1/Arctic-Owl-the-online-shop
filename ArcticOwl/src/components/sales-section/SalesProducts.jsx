@@ -7,7 +7,6 @@ import { CartContext } from "../../context/AppContexts";
 
 export function SalesProducts() {
   const { addToCart } = useContext(CartContext);
-
   const [salesProducts, setSalesProducts] = useState([]);
 
   useEffect(() => {
@@ -31,12 +30,14 @@ export function SalesProducts() {
                 <li key={product.id} className="sales-products-section__item">
                   <article className="sales-products-section__product product">
                     <Link to={`/product-details/${product.id}`}>
-                      <img
-                        loading="lazy"
-                        className="product__img"
-                        src={product.image || "../../images/no-image.png"}
-                        alt="product image"
-                      />
+                      <div className="product__img-wrapper">
+                        <img
+                          loading="lazy"
+                          className="product__img"
+                          src={product.image || "../../images/no-image.png"}
+                          alt="product image"
+                        />
+                      </div>
                       <h3 className="product__title">{product.name}</h3>
                     </Link>
                     <div className="product__footer">
