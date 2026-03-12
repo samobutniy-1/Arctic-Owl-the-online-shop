@@ -1,12 +1,13 @@
 @use "../base/typography";
-@use "../variables/colors" as *;
-@use "../variables/shadows" as *;
+
+@use "../variables" as *;
 @use "../utils/functions" as *;
 
 .hero-section {
   &__container {
     padding: 0;
   }
+
   &__info {
     display: flex;
     background-color: $primary-color-light;
@@ -14,47 +15,116 @@
     align-items: center;
     padding: em(46) em(32) em(46) em(72);
     box-shadow: $shadow;
+
+    @media (max-width: $desktop) {
+      padding: em(36) em(24) em(36) em(48);
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: em(32) em(24);
+    }
+
+    @media (max-width: $mobile) {
+      padding: em(24) em(16);
+    }
   }
+
   &__text {
-    line-height: auto;
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 32px;
-    max-inline-size: 540px;
-    min-inline-size: 240px;
+    gap: em(32);
+    max-inline-size: em(540);
+    min-inline-size: em(240);
     line-height: 1.6;
+
+    @media (max-width: $tablet) {
+      max-inline-size: 100%;
+      gap: em(20);
+    }
   }
 
   &__title {
     position: relative;
-    margin-bottom: 24px;
-    border-top: 3px solid $text-color;
-    border-bottom: 3px solid $text-color;
-    padding: 24px 0;
+    margin-bottom: em(24);
+    border-top: rem(3) solid $text-color;
+    border-bottom: rem(3) solid $text-color;
+    padding: em(24) 0;
     line-height: 1.1;
+
+    @media (max-width: $tablet) {
+      margin-bottom: em(16);
+      padding: em(16) 0;
+    }
   }
 
   &__subtitle {
   }
+
   &__img {
     width: 40%;
     height: auto;
+
+    @media (max-width: $tablet) {
+      width: 60%;
+      align-self: center;
+      margin-top: em(24);
+    }
+
+    @media (max-width: $mobile) {
+      width: 80%;
+    }
   }
+
   &__nav-links {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: $desktop) {
+      gap: em(8);
+    }
+
+    @media (max-width: $laptop) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: em(24);
+      margin-top: em(14);
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+
     button {
       text-align: center;
       background-color: $primary-color-light;
-      border-radius: 0 0 22px 22px;
-      padding: 6px 42px 8px;
+      border-radius: 0 0 rem(22) rem(22);
+      padding: em(6) em(42) em(8);
       box-shadow: $hero-shadow;
+      font-size: rem(24);
 
       &:hover {
         text-decoration: underline;
+      }
+
+      @media (max-width: $desktop) {
+        padding: em(6) em(20) em(8);
+      }
+
+      @media (max-width: $laptop) {
+        border-radius: rem(22);
+        padding: em(10) em(20);
+        font-size: rem(20);
+        flex: 0 0 calc(50% - 12px);
+        text-align: center;
+      }
+
+      @media (max-width: $mobile) {
+        flex: 1 1 100%;
+        width: 100%;
       }
     }
   }

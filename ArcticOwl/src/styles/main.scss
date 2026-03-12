@@ -16,10 +16,16 @@ body {
   font-family: "Mina", sans-serif;
   background-color: $primary-color;
   height: 100%;
+  @media (max-width: $tablet) {
+    padding-top: 90px;
+  }
 }
 
 section {
   margin-bottom: em(100);
+  @media (max-width: $tablet) {
+    margin-bottom: em(70);
+  }
 }
 
 [class*="__container"] {
