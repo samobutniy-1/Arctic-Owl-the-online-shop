@@ -1,28 +1,34 @@
-@use "../variables/colors" as *;
-@use "../variables/shadows" as *;
+@use "../variables" as *;
+@use "../utils/functions" as *;
 
 .details-section {
-  &__container {
-  }
   &__content {
     width: 100%;
     display: flex;
     background-color: $primary-color-light;
     flex-direction: column;
     justify-content: center;
-    border-radius: 20px;
-    padding: 72px;
+    border-radius: em(20);
+    padding: clamp(rem(20), 5vw, rem(72));
   }
+
   &__main-content {
     display: flex;
-    border-radius: 20px;
-    gap: 50px;
+    border-radius: em(20);
+    gap: clamp(rem(24), 4vw, rem(50));
+
+    @media (max-width: $laptop) {
+      flex-direction: column;
+    }
   }
+
   &__add-btn {
     display: flex;
     align-self: flex-end;
     transition: 0.3s;
-
+    @media (max-width: $tablet) {
+      font-size: rem(16);
+    }
     &:hover {
       transform: scale(1.05);
     }
@@ -30,17 +36,37 @@
 }
 
 .main-content {
-  margin-bottom: 25px;
+  margin-bottom: em(25);
   display: flex;
   align-items: flex-start;
+  font-size: clamp(rem(20), 1.5vw, rem(24));
+
+  @media (max-width: $laptop) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: rem(16);
+  }
 
   &__img {
     aspect-ratio: 505 / 579;
     border: 2px solid black;
-    max-height: 579px;
+    max-height: clamp(rem(300), 50vw, rem(579));
     width: 40%;
     position: relative;
     overflow: hidden;
+
+    @media (max-width: $laptop) {
+      width: 40%;
+      max-height: rem(380);
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      max-height: rem(300);
+    }
 
     img {
       position: absolute;
@@ -49,33 +75,42 @@
       top: 0;
       left: 0;
       object-fit: contain;
-      padding: 20px;
+      padding: em(20);
     }
   }
+
   &__description {
     max-width: 50%;
+
+    @media (max-width: $laptop) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: clamp(rem(16), 3vw, rem(40));
 
   &__title {
+    @media (max-width: $laptop) {
+      text-align: center;
+    }
   }
+
   &__button {
-    max-width: 255px;
+    max-width: em(255);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: em(10);
   }
-  &__span {
-  }
+
   &__arrow {
-    width: 28px;
-    height: 28px;
+    width: em(28);
+    height: em(28);
     fill: $primary-color;
     transform: rotate(-90deg);
     transition: 0.3s;
@@ -84,6 +119,7 @@
       transform: rotate(90deg);
     }
   }
+
   &__text {
     display: none;
     line-height: 1.6;
@@ -92,13 +128,14 @@
       display: block;
     }
   }
+
   &__details {
     display: none;
 
     &--active {
       display: grid;
       grid-template-columns: max-content 1fr;
-      gap: 24px 8px;
+      gap: em(24) em(8);
     }
   }
 }
@@ -124,7 +161,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: em(8);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -133,7 +170,7 @@
     .details__item--features &,
     .details__item--components & {
       flex-direction: column;
-      gap: 4px;
+      gap: em(4);
     }
   }
 
@@ -148,9 +185,9 @@
 
   &__size-btn {
     border: 1px solid $border-color;
-    border-radius: 20px;
-    padding: 4px 12px;
-    font-size: 16px;
+    border-radius: em(20);
+    padding: em(4) em(12);
+    font-size: rem(16);
     background-color: transparent;
     cursor: pointer;
     transition: 0.3s;
@@ -170,8 +207,8 @@
 .button {
   background-color: $primary-color-light;
   border: 1px solid $border-color;
-  border-radius: 20px;
+  border-radius: em(20);
   box-shadow: $products-shadow;
   width: fit-content;
-  padding: 10px;
+  padding: em(10);
 }
