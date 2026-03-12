@@ -1,36 +1,80 @@
-@use "../variables/colors" as *;
+@use "../variables" as *;
+@use "../utils/functions" as *;
 
 .burger-menu {
   z-index: 1000;
   position: fixed;
-  top: 140px;
+  top: em(140);
   right: -999px;
   height: 70svh;
   width: 40%;
+  max-width: em(500);
   background-color: $primary-color-light;
-  padding: 40px 24px;
-  border-radius: 20px;
-  transition: 0.3s;
+  padding: em(40) em(24);
+  border-radius: em(20);
+  transition: right 0.3s ease;
+  overflow-y: auto;
+
+  // From 1240px — wider and centered
+  @media (max-width: $desktop) {
+    width: 80%;
+    max-width: em(1000);
+  }
+
+  // Tablet devices
+  @media (max-width: $tablet) {
+    width: 80%;
+    padding: em(36) em(22);
+    font-size: rem(16);
+  }
+
+  // Mobile devices
+  @media (max-width: $mobile) {
+    width: 85%;
+    padding: em(32) em(20);
+    right: -999px;
+    font-size: rem(16);
+  }
 
   &--open {
-    right: 155px;
+    right: em(155);
+
+    @media (max-width: $desktop) {
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
+
   &__content {
+    min-height: 100%;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
-  &__item {
-    font-size: 24px;
-    button {
-      background-color: transparent;
-      &:hover {
-        text-decoration: underline;
-      }
+    gap: em(20);
+
+    @media (max-width: $tablet) {
+      gap: em(16);
     }
   }
+
+  &__item {
+    font-size: rem(24);
+
+    @media (max-width: $tablet) {
+      font-size: rem(20);
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(18);
+    }
+
+    button {
+      background-color: transparent;
+    }
+  }
+
   &__cart {
   }
 }
@@ -39,40 +83,89 @@
   &__list {
     display: flex;
     flex-direction: column;
+    gap: 0;
+    transition: gap 0.3s ease;
 
     &--active {
-      gap: 14px;
+      gap: em(14);
     }
   }
+
   &__item {
-    font-size: 20px;
+    font-size: rem(20);
+
+    @media (max-width: $tablet) {
+      font-size: rem(18);
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(16);
+    }
   }
+
   &__link {
     display: none;
+    margin-left: em(24);
+    transition: text-decoration 0.2s ease;
+    cursor: pointer;
+
+    @media (max-width: $tablet) {
+      margin-left: em(20);
+    }
+
+    @media (max-width: $mobile) {
+      margin-left: em(16);
+    }
+
     &--active {
       display: block;
     }
+
     &:hover {
       text-decoration: underline;
     }
   }
+
   &__button-container {
     display: flex;
     align-items: center;
-    max-width: 150px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: em(150);
     background-color: transparent;
+    transition: margin-bottom 0.3s ease;
+
+    @media (max-width: $tablet) {
+      max-width: em(140);
+    }
+
     &--active {
-      margin-bottom: 20px;
+      margin-bottom: em(8);
     }
   }
+
   &__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    align-items: center;
+    gap: em(8);
   }
+
   &__arrow {
-    width: 38px;
-    height: 38px;
+    width: em(38);
+    height: em(38);
+    min-width: em(38);
     fill: $primary-color;
     transform: rotate(-90deg);
-    transition: 0.3s;
+    transition: transform 0.3s ease;
+
+    @media (max-width: $tablet) {
+      width: em(32);
+      height: em(32);
+      min-width: em(32);
+    }
 
     &--active {
       transform: rotate(90deg);
@@ -86,8 +179,13 @@
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 
   &--active {
     display: block;
+    opacity: 1;
+    pointer-events: auto;
   }
 }
