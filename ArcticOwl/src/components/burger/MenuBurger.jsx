@@ -4,7 +4,7 @@ import { BurgerContext, CartContext } from "../../context/AppContexts";
 
 export function MenuBurger({ isOpen, onClose }) {
   const { toggleButton, isActive } = useContext(BurgerContext);
-  const { setActiveCategory } = useContext(CartContext);
+  const { setActiveCategory, cart } = useContext(CartContext);
   const navigate = useNavigate();
 
   const handleCategoryClick = (value) => {
@@ -12,6 +12,8 @@ export function MenuBurger({ isOpen, onClose }) {
     navigate("/");
     onClose();
   };
+
+  const cartCount = cart?.length ?? 0;
 
   return (
     <>
@@ -65,7 +67,12 @@ export function MenuBurger({ isOpen, onClose }) {
               </ul>
             </li>
             <li className="burger-menu__cart">
-              <Link to="/cart">Cart</Link>
+              <Link to="/cart">
+                Cart
+                {cartCount > 0 && (
+                  <span className="burger-menu__cart-count">({cartCount})</span>
+                )}
+              </Link>
             </li>
           </ul>
         </div>
