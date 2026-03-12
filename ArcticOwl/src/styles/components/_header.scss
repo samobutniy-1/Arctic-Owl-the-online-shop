@@ -12,6 +12,12 @@
   align-items: center;
   justify-content: center;
   height: em(116);
+  @media (max-width: $tablet) {
+    font-size: rem(16);
+  }
+  @media (max-width: $mobile) {
+    font-size: rem(14);
+  }
 
   &__container {
     height: em(76);
@@ -25,6 +31,9 @@
       gap: em(18);
       height: 100%;
       flex-grow: 1;
+    }
+    @media (max-width: $laptop) {
+      gap: em(24);
     }
   }
   &__logo-container {
@@ -74,6 +83,9 @@
     &--scrolled {
       box-shadow: $header-shadow;
     }
+    @media (max-width: $laptop) {
+      display: none;
+    }
   }
   &__cart-icon {
     fill: $text-color;
@@ -111,17 +123,34 @@
       height: em(4);
       background-color: $text-color;
       transition: 0.2s;
+
+      @media (max-width: $mobile) {
+        width: em(36);
+        height: em(3);
+      }
     }
 
     &--active {
       span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
+        @media (max-width: $tablet) {
+          transform: translateY(6px) rotate(45deg);
+        }
+        @media (max-width: $mobile) {
+          transform: translateY(5px) rotate(45deg);
+        }
       }
       span:nth-child(2) {
         opacity: 0;
       }
       span:nth-child(3) {
         transform: translateY(-11px) rotate(-45deg);
+        @media (max-width: $tablet) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+        @media (max-width: $mobile) {
+          transform: translateY(-6px) rotate(-45deg);
+        }
       }
     }
     &--scrolled {
