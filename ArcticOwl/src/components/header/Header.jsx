@@ -76,7 +76,7 @@ export function Header() {
               <input
                 ref={inputRef}
                 type="text"
-                placeholder="Find yout product..."
+                placeholder="Find your product..."
                 className="header__input"
                 onChange={searchProduct}
                 value={query}

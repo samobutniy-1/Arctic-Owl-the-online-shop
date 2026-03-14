@@ -22,6 +22,7 @@ export function Cart() {
   return (
     <>
       <Header />
+
       <section className="cart-section">
         <div className="cart-section__container">
           <div
