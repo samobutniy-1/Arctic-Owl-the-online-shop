@@ -7,7 +7,7 @@ export default function handler(req, res) {
 
   try {
     const db = JSON.parse(
-      readFileSync(join(process.cwd(), "server/db.json"), "utf-8"),
+      readFileSync(new URL("../server/db.json", import.meta.url), "utf-8"),
     );
 
     if (!db[resource]) {
