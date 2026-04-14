@@ -1,4 +1,6 @@
-import db from "./db.json" assert { type: "json" };
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const db = require("./db.json");
 
 export default function handler(req, res) {
   const { resource, id, ...filters } = req.query;
