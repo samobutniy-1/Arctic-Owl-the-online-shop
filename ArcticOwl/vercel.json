@@ -1,3 +1,8 @@
 {
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/[resource]" }]
+  "rewrites": [
+    {
+      "source": "/api/:resource",
+      "destination": "/api/[resource]?resource=:resource"
+    }
+  ]
 }
