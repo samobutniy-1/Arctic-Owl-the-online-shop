@@ -13,9 +13,7 @@ export function SalesSection() {
 
   useEffect(() => {
     const getSalesData = async () => {
-      const response = await axios.get(
-        "http://localhost:3001/products?sale=true",
-      );
+      const response = await axios.get("api/products?sale=true");
       setSales(response.data);
     };
     getSalesData();

@@ -19,7 +19,7 @@ export const ProductsSection = forwardRef(function ProductsSection(
 
   useEffect(() => {
     const getProducts = async () => {
-      const response = await axios.get("http://localhost:3001/products");
+      const response = await axios.get("api/products");
       setProducts(response.data);
     };
     getProducts();

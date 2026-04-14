@@ -100,9 +100,7 @@ export function ProductDetails() {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3001/products/${id}`,
-        );
+        const response = await axios.get(`api/products/${id}`);
         setProduct(response.data);
       } catch (error) {
         console.error("Failed to fetch product:", error);
