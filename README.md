@@ -2,6 +2,8 @@
 
 A multi-page e-commerce website for winter clothing and outdoor gear, built with React and a local JSON database.
 
+🔗 **Live Demo:** [arctic-owl-the-online-shop.vercel.app](https://arctic-owl-the-online-shop-efrw.vercel.app/)
+
 ## Tech Stack
 
 - **React** — component-based UI library used to build the entire interface
@@ -29,21 +31,4 @@ Products can be searched by name from any page using the search input. Categorie
 
 **Note:** "Your Account" and "About Us" links are not yet functional. Size selection on the product page is UI-only and is not saved.
 
-## Getting Started
 
-Make sure you have Node.js and npm installed.
-```bash
-git clone https://github.com/samobutniy-1/Arctic-Owl-the-online-shop.git
-cd Arctic-Owl-the-online-shop/ArcticOwl
-npm install
-npm run start
-```
-
-`npm run start` launches both the React development server and JSON Server at the same time.
-
-- App: `http://localhost:3000`
-- API: `http://localhost:3001`
-
-## Author
-
-**samobutniy-1** — [GitHub](https://github.com/samobutniy-1)
