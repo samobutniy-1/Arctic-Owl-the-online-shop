@@ -1,4 +1,5 @@
 {
+  "includeFiles": ["ArcticOwl/api/db.json"],
   "rewrites": [
     {
       "source": "/api/:resource",
